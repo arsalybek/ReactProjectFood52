@@ -62,6 +62,8 @@ font-family: 'Cherry Swash', cursive;
     float: right;
     margin-left: -50%;
     margin: 10px;
+    height: 20px;
+    width: 60px;
 }
 img{
     float: right;

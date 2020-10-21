@@ -1,0 +1,12 @@
+
+  
+.btn{
+  width: 120px;
+}
+  .buttons{
+    display: flex;
+    justify-content: space-around;
+    border:none;
+    right: 0;
+    top: 0;
+  }

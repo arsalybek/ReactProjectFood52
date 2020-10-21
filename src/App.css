@@ -7,6 +7,64 @@
   pointer-events: none;
 }
 
+.apP{
+  padding-left: 150px;
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.leftBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.rightBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+}
+h5{
+  color:  #5b659c;
+  font-family: comic sans ms;
+}
+
+
+.loginBtn{
+
+  font-family: comic sans ms;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  background-color: rgb(167, 140, 122);
+}
+
+.signupBtn{
+  
+  width: 250px;
+  height: 55px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  background-color: #5b659c;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -1,12 +1,11 @@
 import './App.css';
-import Navbar from './navbar/Navbar';
 import React, { useState } from "react";
 import "./App.css";
-import Auth from "./components/Auth";
-import Registration from "./components/Registration";
-import Welcome from "./components/Welcome";
-import { AuthorizationPages } from "./models/enums";
-import { User } from "./models/User";
+import Auth from "./Auth";
+import Registration from "./Registration";
+import Welcome from "./Welcome";
+import { AuthorizationPages } from "../models/enums";
+import { User } from "../models/User";
 
 
 const users: User[] = [
@@ -35,10 +34,7 @@ function App() {
   const [showedElement, setShowedElement] = useState(<></>);
 
   return (
-    <>
-    <>
-    <Navbar/>
-    </>
+   
     <div className="apP">
       <div className="leftBlock">
         <h5>Log In to Food52</h5><br/>
@@ -58,7 +54,7 @@ function App() {
 
       {showedElement}
     </div>
-    </>
+
   );
 
   function showComponent(page?: AuthorizationPages, user?: User) {
