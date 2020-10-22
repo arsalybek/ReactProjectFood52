@@ -1,6 +1,7 @@
 import React, {  ReactElement } from "react";
 import { User } from "../../models/User";
 import Field from "../../shared/Field";
+import { Link } from 'react-router-dom';
 import './style.css'
 
 interface Props {
@@ -35,9 +36,8 @@ export default function Auth({ login, cancel }: Props): ReactElement {
       />
 
       <div className="buttons">
-      <button className="btn btn-primary btn-lg" onClick={() => login(user)}>Submit</button>
-        <button className="btn btn-warning btn-lg" onClick={cancel}>Cancel</button>
-        
+      <Link to="/recipes" className="btn btn-primary btn-lg" onClick={() => login(user)}>Submit</Link>
+      <button className="btn btn-warning btn-lg" onClick={cancel}>Cancel</button>        
       </div>
 
      

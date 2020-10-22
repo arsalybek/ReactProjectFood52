@@ -32,7 +32,7 @@ function Login({users}:Props) {
         <input id="save" type="checkbox" value="Есте сақтау"/><label>Remember me</label>
         <a href="">Forget the password?</a>
       </div>
-      <h2>Login with</h2>
+      <h6>Login with</h6>
       <div className="login_with">
         <a href="https://mail.google.com/"><button className="google" >G</button></a>
         <a href="https://www.facebook.com/?stype=lo&jlou=Afd3RDSVmFNzzLo542VVYoBBE5nA4ffYoZGgjooeEo4XYxkmiL61ujQF53kb0-sfI-i6N9FkQ3yYTsX_6EZu8-i1gn9_Ylq5R-9XZZTCZZkv4g&smuh=34169&lh=Ac9-Kasc43F6Wb-GFgo"><button className="facebook">f</button></a>
