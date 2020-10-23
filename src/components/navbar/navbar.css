@@ -85,6 +85,29 @@ ul.navbar-list .navbar-list__item a:hover {
 ol, ul {
   list-style: none;
 }
-img{
+.icon-img{
   margin: 10px;
+}
+
+.dropdown {
+  display: flex;
+  float: left;
+  align-items: center;
+  border-radius: 2px;
+  padding: 5px 0;
+  margin: auto;
+  margin-left: -400px;
+}
+span{
+  background-color: #1C2B36;
+  margin: 5px;
+  color: white;
+  border-radius: 4px;
+  padding: 4px;
+}
+.selected{
+  color: #B94A48;
+  margin: 5px;
+  padding: 4px;
+  font-size: 22px;
 }
