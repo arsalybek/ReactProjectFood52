@@ -1,16 +1,16 @@
 import React, { ReactElement ,useState} from 'react'
 import { AuthorizationPages } from "../../models/enums";
 import { Link } from 'react-router-dom';
-import { User } from "../../models/User";
+
 import './navbar.css'
-import Login from "../auth/Login";
+
 
 interface Props {
-   users:User[]
+   
 }
 
-export default function Navbar({users}: Props): ReactElement {
-    const [showedElement, setShowedElement] = useState(<></>);
+export default function Navbar(props: Props): ReactElement {
+    
     return (
         // <div className="navigation-bar">
         //     {/* <button className="login-button">Log in/Sign up</button>
@@ -48,22 +48,7 @@ export default function Navbar({users}: Props): ReactElement {
         </div>
     )
 
-    function showComponent(page?: AuthorizationPages, user?: User) {
-        switch (page) {
-          case AuthorizationPages.Login:
-            setShowedElement(
-              (prevElement) =>
-                (prevElement = <Login users={users} />)
-            );
-            break;
     
-          
-    
-          default:
-            setShowedElement((prevElement) => (prevElement = <></>));
-            break;
-        }
-      }
 
 
       

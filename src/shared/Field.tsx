@@ -1,4 +1,4 @@
-import React, { ChangeEvent, ReactElement } from 'react';
+import React, { ChangeEvent, ReactElement,useEffect, useState } from 'react';
 import "./Field.css";
 
 interface Props {
@@ -11,7 +11,27 @@ interface Props {
 export default function Field({label, onChange, type, required}: Props): ReactElement {
 
     let inputType = 'text';
+    const [name, setName] = useState<string>('');
+    
+    
+        useEffect(() => {
+        document.title = `Hello ${name}`;
+        }, [name])
+    
+    useEffect(() => {
+        console.log('Component mounted');
+        return () => {
+            console.log('Component will be unmount');
+        }
+    }, []);
 
+    useEffect(() => {
+        console.log(`Any state changed Name: ${name}`);
+    });
+
+    useEffect(() => {
+        console.log(`Name changed: ${name}`);
+    }, [name]);
     if (type) {
         inputType = type;
     }

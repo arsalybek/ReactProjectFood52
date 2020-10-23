@@ -1,6 +1,6 @@
-import React, {  useState } from "react";
+import React, {  useState,useEffect } from "react";
 import { User } from "../../models/User";
-import Auth from "./Auth";
+import Auth, { AppContext } from "./Auth";
 import Registration from "./Registration";
 import Navbar from "../navbar/Navbar"
 import { AuthorizationPages } from "../../models/enums";
@@ -10,10 +10,11 @@ interface Props {
 }
 function Login({users}:Props) {
     const [showedElement, setShowedElement] = useState(<></>);
-  
+   
+
     return (
     <>
-        <Navbar users={users}/>            
+        <Navbar/>            
         <div className="app">
         
             <div className="login_page">
@@ -87,7 +88,7 @@ function Login({users}:Props) {
   
         case AuthorizationPages.Navbar:
           if (user) {
-            setShowedElement((prevElement) => (prevElement = <Navbar users={users} />));
+            setShowedElement((prevElement) => (prevElement = <Navbar/>));
           }
           break;
   
@@ -116,6 +117,10 @@ function Login({users}:Props) {
           (u) => u.email === user.email && u.password === user.password
         );
         if (checker) {
+            // <AppContext.Provider value={ {
+            //     authenticated: true,
+            //   } }>
+            // </AppContext.Provider> 
           showComponent(AuthorizationPages.Navbar,checker);
         }
       }

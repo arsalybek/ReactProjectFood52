@@ -144,3 +144,11 @@ button:hover{
   text-decoration: none;
   color: #fe793c;
 }
+
+a{
+  color:white
+}
+
+a:hover{
+  color: #FFF;
+}

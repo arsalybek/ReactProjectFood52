@@ -3,7 +3,7 @@ import './App.css';
 import FoodCategory from './components/recipeCategory/RecipeCategory';
 import Navbar from './components/navbar/Navbar';
 import { recipeCategoryList } from './models/RecipeCategory';
-import { User, users } from "./models/User";
+import { users } from "./models/User";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import PastaRecipesList from './components/categoryRecipeList/PastaRecipesList';
 import SaladRecipesList from './components/categoryRecipeList/SaladRecipesList';
@@ -19,7 +19,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/recipes">
-        <Navbar users={users}/>
+        <Navbar/>
         <FoodCategory foodCategoryList = {recipeCategoryList} />  
         </Route>
 
