@@ -33,10 +33,10 @@ export default function Navbar(props: Props): ReactElement {
                     <div className="navbar__block">
                         <nav className="navbar">
                         <ul className="navbar-list">
-                        <li className="navbar-list__item "><a href="https://kitap.kz/book">RECIPES</a></li>
+                        <li className="navbar-list__item "><a href="/recipes">RECIPES</a></li>
                      <li className="navbar-list__item "><a href="https://kitap.kz/audio-book">BLOG</a></li> 
                      <li className="navbar-list__item "><a href="https://kitap.kz/video">FOOD</a></li> 
-                     <li className="navbar-list__item "><a href="https://kitap.kz/music">SHOP</a></li>
+                     <li className="navbar-list__item "><a href="/shop">THE SHOP</a></li>
                      </ul>
                      </nav>
                      <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='22' viewBox='0 0 18 22'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23444' stroke-linecap='round' stroke-width='1.2'%3E%3Cpath d='M14.632 2.659a6.589 6.589 0 0 1 1.434 9.227c-2.159 2.943-6.303 3.584-9.256 1.43a6.589 6.589 0 0 1-1.434-9.227c2.16-2.943 6.304-3.583 9.256-1.43zM6.81 13.316l-5.424 7.392'/%3E%3C/g%3E%3C/svg%3E"/>

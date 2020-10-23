@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { User } from "../../models/User";
 import Field from "../../shared/Field";
-import './style.css'
+import './auth.css'
 interface Props {
   registrate: (user: User) => void;
   cancel: () => void;

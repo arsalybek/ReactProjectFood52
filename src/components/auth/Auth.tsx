@@ -57,7 +57,7 @@
 import React, {  ReactElement } from "react";
 import { User } from "../../models/User"
 import { Link } from 'react-router-dom';
-import './style.css'
+import './auth.css'
 import { useForm } from "react-hook-form";
 interface Props {
   login: (user: User) => void;

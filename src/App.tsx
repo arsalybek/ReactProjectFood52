@@ -9,6 +9,8 @@ import PastaRecipesList from './components/categoryRecipeList/PastaRecipesList';
 import SaladRecipesList from './components/categoryRecipeList/SaladRecipesList';
 import ChickenRecipesList from './components/categoryRecipeList/ChickenRecipesList';
 import Login from './components/auth/Login';
+import Shop from './components/shop/shop'
+import { shopList } from './models/Shop';
 
 
 
@@ -36,6 +38,9 @@ function App() {
         </Route>
         <Route path="/login">
           <Login users= {users}/>
+        </Route>
+        <Route path="/shop">
+          <Shop shopList={shopList}/>
         </Route>
     </Switch>
     </Router>
