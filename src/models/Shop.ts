@@ -25,8 +25,5 @@ export let shopList: ShopModel[] = [
     {"categoty_id":8, "id":17, "image":"https://images.food52.com/4fGUNZMs8v5fCVtUQiAEj5-pTzA=/680x680/filters:format(webp)/2b1aefe5-4700-4b39-b33c-173369187826--2019-0308_bees-wrap_assorted-set-of-3_ocean_1x1_ty-mecham_001.jpg", 
         "name": "Creamy Sausage Pasta With Cabbage", "price": 70, "review_count": 8 } 
         
-        
-
-
-    
+           
 ]

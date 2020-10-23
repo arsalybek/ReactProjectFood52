@@ -20,9 +20,9 @@ function Login({users}:Props) {
             <div className="login_page">
             <div className="left_side">
                 <h2>Log In to Food52</h2>
-                <h5>Already have an account?       <button className="btn btn-outline-warning" onClick={() => showComponent(AuthorizationPages.Auth)}>Login</button></h5>
+                <h5>Already have an account?<button className="btn-warning" onClick={() => showComponent(AuthorizationPages.Auth)}>Login</button></h5>
                 <div className="register">
-                <h5>Not a member yet?      <button className="btn btn-outline-primary" onClick={() => showComponent(AuthorizationPages.Registration)}>Sign Up</button></h5>           
+                <h5>Not a member yet?<button className="btn-primary" onClick={() => showComponent(AuthorizationPages.Registration)}>Sign Up</button></h5>           
                      
                 </div>
                

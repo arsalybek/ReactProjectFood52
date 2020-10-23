@@ -128,9 +128,9 @@ export default function Auth({ login, cancel }: Props): ReactElement {
           <div className="error">Your must enter your score.</div>
         )}
       </div>
-      <button className="btn btn-primary btn-lg" onClick={() => login(user)} type="submit">Submit</button>
+      <button className="btn-primary btn-lg" onClick={() => login(user)} type="submit">Submit</button>
       <Link to="/recipes"  type="submit" className="a" onClick={() => login(user)}>a</Link>
-      <button className="btn btn-warning btn-lg" onClick={cancel}>Cancel</button>
+      <button className="btn-warning btn-lg" onClick={cancel}>Cancel</button>
       
     </form>
     </div>

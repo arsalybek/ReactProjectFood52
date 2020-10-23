@@ -14,8 +14,6 @@ import { shopList } from './models/Shop';
 
 
 
-
-
 function App() {
   return (
     <Router>
