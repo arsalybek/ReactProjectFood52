@@ -10,6 +10,11 @@ import ChickenRecipesList from './components/categoryRecipeList/ChickenRecipesLi
 import Footer from './components/footer/Footer';
 import MainPage from './components/main-page/MainPage';
 import { LangContext } from './components/context/Lang';
+import RecipeDetails from './components/recipeDetails/RecipeDetails';
+import { users } from "./models/User";
+import Shop from './components/shop/shop';
+import { shopList } from './models/Shop';
+import Login from './components/auth/Login';
 
 function App() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -36,6 +41,15 @@ function App() {
 
         <Route path="/chicken">
           <ChickenRecipesList/>
+        </Route>
+        <Route path="/details/:id">
+          <RecipeDetails/>
+        </Route>
+        <Route path="/login">
+          <Login users= {users}/>
+          </Route>
+          <Route path="/shop">
+          <Shop shopList={shopList}/>
         </Route>
     </Switch>
     <Footer/>

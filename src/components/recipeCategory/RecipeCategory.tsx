@@ -67,7 +67,7 @@ export default class RecipeCategory extends Component<Props, State> {
             <label htmlFor="search-input" className="search-icon-wrapper">
               <div className="search-icon"></div>
             </label>
-              <input type="search" className="search-input" id="search-input" placeholder="Search recipes and more..." 
+              <input type="search" className="search-input"  placeholder="Search recipes and more..." 
                       onChange={this.handleChange}/>
                 </div>
             </div>

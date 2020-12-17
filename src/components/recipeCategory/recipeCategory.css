@@ -63,7 +63,7 @@ span{
     height: var(--searchbox-height);
     position: relative;
   }
-  /* -----search-input styles----- */
+
   .search-input {
     box-sizing: border-box;
     margin: 0;
@@ -91,9 +91,6 @@ span{
   .search-input:focus::placeholder {
     color: transparent;
   }
-  
-  
-  /* -----search-icon styles---- */
   
   .search-icon-wrapper {
     padding: 0 24px;

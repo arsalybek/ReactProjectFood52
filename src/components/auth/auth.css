@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.fields{
+  display: flex;
+  flex-direction: column;
+  
+  margin-top: -320px;
+  margin-left: 150px;
+  max-width: 400px;
+  height: 320px;
+  
+  
+}
+
+.app{
+display: flex;
+justify-content: start;
+}
+
+
+.login_page{
+display: flex;
+flex-direction: row;
+justify-content:flex-start;
+flex-wrap: wrap;
+
+}
+.left_side{
+width:400px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin: 0 150px
+}
+
+.img{
+width: 450px;
+height: 570px;
+}
+h2{
+margin-top: 30px;
+color: #97a5b2;
+font-size: 20px;
+font-weight: 600;
+text-transform: uppercase; 
+}
+
+h6{
+color: #97a5b2;
+font-size: 20px;
+font-weight: 600;
+text-transform: uppercase; 
+}
+
+h5{
+text-transform: uppercase; 
+font-weight: 600;
+color:#2D4558
+}
+/* .loginForm input,label{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-self: start;
+}
+.login_form input{
+display: block;
+height: 41px;
+width: 400px;
+padding: 0 24px;
+border: darkgray 1px solid;
+color:#fe793c;
+line-height: 16px;
+margin-bottom: 16px;
+font-size: 16px;
+}
+.after_login {
+display:flex;
+flex-direction: row;
+}
+.after_login input,label{
+align-content: flex-start;
+} */
+
+.after_login a{
+font-size: 16px;
+color: gray;
+margin-left: 60px;
+
+}
+button{
+padding: 12px 40px;
+background-color: #fe793c;
+border:none;
+border-radius: 1px;
+transition: all 0.3s ease 0s;
+cursor: pointer;
+color: white;
+font-size: 16px;
+}
+
+button:hover{
+background-color: #fa5837;
+}
+.login_with{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.login_with button{
+padding: 12px 90px;
+background-color: #FFF;
+border: darkgray 1px solid;
+border-radius: 2px;
+transition: all 0.3s ease 0s;
+cursor: pointer;
+}
+.login_with .google{
+color: #fa5837;
+font-size: 20px;
+font-weight: bold;
+}
+.login_with .facebook{
+color: #4267b2;
+font-size: 20px;
+font-weight: bold;
+}
+.login_with button:hover{
+background-color: #fe793c;
+color: #FFFFFF;
+border-color:#fe793c ;
+}
+.register p a{
+text-decoration: none;
+color: #fe793c;
+}
+
+.a-login{
+color:white
+}
+
+a:hover{
+color: #FFF;
+}

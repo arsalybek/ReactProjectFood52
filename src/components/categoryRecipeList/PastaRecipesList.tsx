@@ -1,5 +1,6 @@
 import React, { ReactElement, useEffect, useState, useRef, createRef } from 'react'
 import { recipeList, RecipeModel } from '../../models/Recipe'
+import { Link } from 'react-router-dom';
 import attachRecipeListToCategory from './attachRecipeListToCategory';
 import './recipes.css'
 
@@ -52,11 +53,13 @@ function PastaRecipesList({curRecipeList}: Props): ReactElement {
         <div className="recipe-div">
             {
             filteredList?.map((recipe) => (
+                <Link key={recipe.id} to={'/details/' + recipe.id}>
                 <div className="recipe-li">
                     <img className="recipe-img"src={recipe.image}/>
                     <h1 className="recipe-name">{recipe.name}</h1>
                     <span className="recipe-span">by {recipe.author}</span>
                 </div>
+                </Link>
                 ))
             }
         </div>
