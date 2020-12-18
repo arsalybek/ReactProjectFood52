@@ -41,8 +41,8 @@ export default function Registration({
       />
 
       <div className="buttons">
-        <button className="btn-primary btn-lg" onClick={() => registrate(user)}>Submit</button>
-        <button className="btn-warning btn-lg"onClick={cancel}>Cancel</button>
+        <button className="btn1" onClick={() => registrate(user)}>Submit</button>
+        <button className="btn2"onClick={cancel}>Cancel</button>
       </div>
     </div>
   );

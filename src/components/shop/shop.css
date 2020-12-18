@@ -1,4 +1,8 @@
-
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
@@ -7,11 +11,11 @@ body {
   font-size: 16px;
   color: black;
 }
-
+/* 
 img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 a {
   text-decoration: none;
@@ -52,8 +56,7 @@ button {
 
 .container {
   width: 100%;
-  /* margin: 0 auto;
-  padding: 0 30px; */
+  
   
 }
 /* .container2 {
@@ -107,8 +110,11 @@ button {
 }
 
 .search__form {
-  display: flex;
-  justify-content: space-between;
+  position: absolute;
+  left: 10%;
+  width: 1000px;
+  height: 10px;
+  
 }
 .search__label {
   flex-grow: 1;
@@ -120,6 +126,7 @@ button {
   line-height: 30px;
   border: 2px solid #ccc;
   border-right-width: 1px;
+  padding: 5px;
 }
 .search__btn {
   border: 2px solid #ccc;
@@ -131,7 +138,7 @@ button {
   display: inline-grid;
   grid-gap: 50px 100px;
   grid-template-columns: auto auto auto;
-  background-color:#887660;
+  background-color:#c7e3fa;
   padding: 14px;
   margin-left: 60px;
   grid-template-columns: repeat(auto-fill, 220px);
@@ -144,29 +151,25 @@ button {
 
 .card {
   cursor: pointer;
-  box-shadow: 1px 2px 5px 0 rgba(174, 174, 174, 0.75);
+  box-shadow: 1px 2px 5px 0 rgba(231, 230, 230, 0.75);
   /* display: flex; */
   /* flex-direction: column;
 } */
 }
 .card__image {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(229, 240, 250);
   flex-grow: 1;
   object-fit: cover;
   max-height: 260px;
 }
-.card__description {
+/* .card__description {
   padding: 15px;
-}
-.card__header {
-  margin-top: 15px;
-  color: #009cf0;
-  font-weight: normal;
-}
-.card__price {
+} */
+
+/* .card__price {
   margin-top: 10px;
   font-weight: bold;
-}
+} */
 
 ul.navbar-list {
     display: flex;
@@ -197,3 +200,33 @@ ul.navbar-list {
     display: flex;
     align-items: center;
   }
+
+  .recipe-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.recipe-li{
+    background-color: #F7F7F7;
+    margin: 20px;
+    padding: 8px;
+}
+
+.recipe-span{
+    background-color: transparent;
+    color: gray;
+    font-size:12px;
+    font-style: italic;
+}
+.card__description button{
+  width: 90px;
+  background-color: #92a5da;
+  color:  #ffffff;
+  opacity: .8;
+  font-size: 18px;
+  padding: 8px 14px;
+  border:  #887660;
+  cursor: pointer;
+  border-radius: 5px;
+}
