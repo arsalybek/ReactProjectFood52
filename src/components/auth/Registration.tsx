@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import { User } from "../../models/User";
 import Field from "../../shared/Field";
-import './auth.css'
+import style from './auth.module.css'
 interface Props {
   registrate: (user: User) => void;
   cancel: () => void;
@@ -14,7 +14,7 @@ export default function Registration({
   let user: User = { email: "", id: 0, password: "", name: "" };
 
   return (
-    <div className="fields">
+    <div className={style.fields}>
       <Field
         type="text"
         label="Name"
@@ -40,9 +40,9 @@ export default function Registration({
         required
       />
 
-      <div className="buttons">
-        <button className="btn1" onClick={() => registrate(user)}>Submit</button>
-        <button className="btn2"onClick={cancel}>Cancel</button>
+      <div className={style.buttons}>
+        <button className={style.btn1} onClick={() => registrate(user)}>Submit</button>
+        <button className={style.btn2} onClick={cancel}>Cancel</button>
       </div>
     </div>
   );

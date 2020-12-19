@@ -1,5 +1,5 @@
 import React from 'react';
-import './menu-list-item.css';
+import style from './menu-list-item.module.css';
 
 const MenuListItem = ({menuItem,onAddToCart,cartItems}) => {
     const {title,price,url,category} = menuItem
@@ -8,21 +8,21 @@ const MenuListItem = ({menuItem,onAddToCart,cartItems}) => {
     }
     return (
         <>
-            <li className="menu__item">
-                <div className="menu__title">{title}</div>
-                <img className="menu__img" src={url} alt="Cesar salad"></img>
-                <div className="menu__category">Category: <span>{category}</span></div>
-                <div className="menu__price">Price: <span>{price}$</span></div>
+            <li className={style.menu__item}>
+                <div className={style.menu__title}>{title}</div>
+                <img className={style.menu__img} src={url} alt="Cesar salad"></img>
+                <div className={style.menu__category}>Category: <span>{category}</span></div>
+                <div className={style.menu__price}>Price: <span>{price}$</span></div>
                 
                 {
                     isInCart(menuItem) && 
-                    <button className="menu__btn" onClick={()=>onAddToCart()}>Add more</button>
+                    <button className={style.menu__btn} onClick={()=>onAddToCart()}>Add more</button>
                 }
 
                 {
                     !isInCart(menuItem) && 
                     
-                    <button className="menu__btn" onClick={()=>onAddToCart()}>Add to cart</button>
+                    <button className={style.menu__btn} onClick={()=>onAddToCart()}>Add to cart</button>
                    
                 }
                

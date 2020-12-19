@@ -59,12 +59,7 @@ button {
   
   
 }
-/* .container2 {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-  } */
+
 .btn {
   background-color: #0af;
   border-color: transparent;
@@ -207,7 +202,7 @@ ul.navbar-list {
     align-items: center;
     justify-content: center;
 }
-.recipe-li{
+.recipe_li{
     background-color: #F7F7F7;
     margin: 20px;
     padding: 8px;
@@ -231,7 +226,7 @@ ul.navbar-list {
   border-radius: 5px;
 }
 
-.clip-star {
+.clip_star {
   background: gold;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   display: inline-block;

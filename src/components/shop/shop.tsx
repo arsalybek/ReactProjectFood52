@@ -1,7 +1,7 @@
 import React, { ReactElement ,useState} from 'react'
 
 import {ShopModel} from '../../models/Shop'
-import './shop.css'
+import style from './shop.module.css'
 
 
 
@@ -21,10 +21,10 @@ export default function Shop({shopList}: Props): ReactElement {
         <div className="content">
         <span id="theme">OUR BESTSELLERS</span>
         <div id="main-header__menu" className="main-header__menu">
-			<div className="search">
-				<form className="search__form">
-					<label className="search__label">
-						<input className="search__input" type="search" placeholder="Search"/>
+			<div className={style.search}>
+				<form className={style.search__form}>
+					<label className={style.search__label}>
+						<input className={style.search__input} type="search" placeholder="Search"/>
 					</label>
 				</form>
 			</div>            
@@ -32,22 +32,21 @@ export default function Shop({shopList}: Props): ReactElement {
         {/* <hr></hr> */}
         </div>
         
-         <div className="container2">
+         <div className={style.container2}>
             {shopList.map((product) => {
-                return<ul className="catalog">            
-				<li className="recipe-li" key={product.id}>
-					<img className="card__image" src={product.image} alt="test"/>
-					<div className="card__description">
-                        <h3 className="card__header">{product.name}</h3>
-                        <div className="card__price">{product.price} $</div>
-                        <div className="card__price">Rewiew: {product.review_count}
-                        <div className="rating">
-                        {/* <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span> */}
-                        <div className="clip-star"></div>
-                        <div className="clip-star"></div>
-                        <div className="clip-star"></div>
-                        <div className="clip-star"></div>
-                        <div className="clip-star"></div>
+                return<ul className={style.catalog}>            
+				<li className={style.recipe_li} key={product.id}>
+					<img className={style.card__image} src={product.image} alt="test"/>
+					<div className={style.card__description}>
+                        <h3 className={style.card__header}>{product.name}</h3>
+                        <div className={style.card__price}>{product.price} $</div>
+                        <div className={style.card__price}>Rewiew: {product.review_count}
+                        <div className={style.rating}>
+                        <div className={style.clip_star}></div>
+                        <div className={style.clip_star}></div>
+                        <div className={style.clip_star}></div>
+                        <div className={style.clip_star}></div>
+                        <div className={style.clip_star}></div>
                         </div>                      
                         
                         </div>

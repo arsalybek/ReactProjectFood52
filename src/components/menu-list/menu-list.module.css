@@ -1,0 +1,5 @@
+.menu__list {
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 430px 430px 430px;
+}

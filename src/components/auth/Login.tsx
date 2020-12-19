@@ -4,7 +4,7 @@ import Auth, { AppContext } from "./Auth";
 import Registration from "./Registration";
 import Navbar from "../navbar/Navbar"
 import { AuthorizationPages } from "../../models/enums";
-import './login.css'
+import style from './login.module.css'
 interface Props {
     users: User[];
 }
@@ -14,19 +14,19 @@ function Login({users}:Props) {
 
     return (
     <>          
-        <div className="app">        
-            <div className="login_page">
-            <div className="left_side">
-              <div className="login">
+        <div className={style.app}>        
+            <div className={style.login_page}>
+            <div className={style.left_side}>
+              <div className={style.login}>
                 <h2>Log In to Food52</h2>
-                <h5>Already have an account?<button className="btn" 
+                <h5>Already have an account?<button className={style.btn} 
                 onClick={() => showComponent(AuthorizationPages.Auth)
                 }>Login
                 </button></h5>
                 </div>
                 
-                <div className="register">
-                <h5>Not a member yet?<button className="btn" 
+                <div className={style.register}>
+                <h5>Not a member yet?<button className={style.btn} 
                 onClick={() => showComponent(AuthorizationPages.Registration)}
                 >Sign Up</button></h5>
                            
@@ -35,19 +35,19 @@ function Login({users}:Props) {
              
             
 
-      <div className="after_login">
+      <div className={style.after_login}>
         <input id="save" type="checkbox" value="Есте сақтау"/><label>Remember me</label>
         <a href="">Forget the password?</a>
       </div>
       <h6>Login with</h6>
-      <div className="login_with">
-        <a href="https://mail.google.com/"><button className="google" >G</button></a>
+      <div className={style.login_with}>
+        <a href="https://mail.google.com/"><button className={style.google} >G</button></a>
         <a href="https://www.facebook.com/?stype=lo&jlou=Afd3RDSVmFNzzLo542VVYoBBE5nA4ffYoZGgjooeEo4XYxkmiL61ujQF53kb0-sfI-i6N9FkQ3yYTsX_6EZu8-i1gn9_Ylq5R-9XZZTCZZkv4g&smuh=34169&lh=Ac9-Kasc43F6Wb-GFgo"><button className="facebook">f</button></a>
       </div>
       </div>
     </div>
   <div>
-    <img className="img"src="https://blog.toryburch.com/wp-content/uploads/2016/11/Food52_960_slide1.jpg"/>
+    <img className={style.img}src="https://blog.toryburch.com/wp-content/uploads/2016/11/Food52_960_slide1.jpg"/>
   </div>
   </div>
   {showedElement}
