@@ -15,6 +15,7 @@ import { users } from "./models/User";
 import Shop from './components/shop/shop';
 import { shopList } from './models/Shop';
 import Login from './components/auth/Login';
+import MenuList from './components/menu-list';
 
 function App() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -50,6 +51,9 @@ function App() {
           </Route>
           <Route path="/shop">
           <Shop shopList={shopList}/>
+        </Route>
+        <Route path="/menu">
+          <MenuList/>
         </Route>
     </Switch>
     <Footer/>

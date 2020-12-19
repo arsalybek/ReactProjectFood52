@@ -1,10 +1,8 @@
 import React, { ReactElement ,useState} from 'react'
-import { AuthorizationPages } from "../../models/enums";
-import { Link } from 'react-router-dom';
+
 import {ShopModel} from '../../models/Shop'
 import './shop.css'
-import Navbar from '../navbar/Navbar';
-import Footer from '../footer/Footer';
+
 
 
 interface Props {

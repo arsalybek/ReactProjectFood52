@@ -41,7 +41,9 @@ export default function Navbar(props: Props): ReactElement {
             <li className="navbar-list__item "><a>{translate('recipe')}</a></li>
             </Link>
             <li className="navbar-list__item "><a>{translate('blog')}</a></li> 
+            <Link to="/menu">
             <li className="navbar-list__item "><a>{translate('food')}</a></li> 
+            </Link>
             <Link to="/SHOP">
             <li className="navbar-list__item "><a>{translate('shop')}</a></li>
             </Link>
