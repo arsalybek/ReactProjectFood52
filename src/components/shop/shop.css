@@ -230,3 +230,13 @@ ul.navbar-list {
   cursor: pointer;
   border-radius: 5px;
 }
+
+.clip-star {
+  background: gold;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  padding: 0.5px;
+}
+
