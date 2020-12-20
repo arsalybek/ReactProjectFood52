@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import MenuListItem from '../menu-list-item';
 import WithRestoService from '../hoc'
 import style from './menu-list.module.css';
+
 import {menuLoaded, menuRequested} from '../../actions'
 import {connect} from 'react-redux'
 import Spinner from '../spinner'
+
 import {addedToCart} from '../../actions'
 
 class MenuList extends Component {

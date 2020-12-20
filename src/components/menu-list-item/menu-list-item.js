@@ -6,6 +6,8 @@ const MenuListItem = ({menuItem,onAddToCart,cartItems}) => {
     const isInCart = product => {
         return !!cartItems.find(item => item.id === product.id);
     }
+
+    
     return (
         <>
             <li className={style.menu__item}>
@@ -30,6 +32,21 @@ const MenuListItem = ({menuItem,onAddToCart,cartItems}) => {
             </li>
         </>
     )
+
+    
 }
 
 export default MenuListItem;
+
+
+// export class Checking extends Component{
+//     state = { };
+  
+//     render() {
+//       const { category } = this.props;
+//         if (menuItem.category === "pizza") {
+//             throw new Error("We don't cook this type of food");
+//     }
+  
+//     return <span>{category}</span>;
+// }

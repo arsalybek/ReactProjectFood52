@@ -15,7 +15,7 @@ export default function Registration({
 
   return (
     <div className={style.fields}>
-      <Field
+      <Field 
         type="text"
         label="Name"
         onChange={(e) => {

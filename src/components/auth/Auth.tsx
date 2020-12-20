@@ -63,7 +63,7 @@ export default function Auth({ login, cancel }: Props): ReactElement {
       </div>
       <div className={style.buttonsLogin}>
       {/* <button className="btn1" onClick={() => login(user)} type="submit">Submit</button> */}
-      <Link to="/recipes"  type="submit" className="submit" onClick={() => login(user)}>Submit</Link>
+      <Link to="/recipes" className={style.submit} type="submit"  onClick={() => login(user)}>Submit</Link>
       <button className={style.btn1} onClick={cancel}>Cancel</button>
       </div>
       

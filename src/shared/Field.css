@@ -1,77 +1,19 @@
-/* .field {
-    display: flex;
-    align-content: flex-start;
-    width: 200px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-    padding: 0 10px;
+.field input{
+   
+  height: 41px;
+  width: 400px;
+  padding: 0 24px;
+  border: darkgray 1px solid;
+  color:#fe793c;
+  line-height: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
 }
 
-.field input {
-    display: block;
-    height: 41px;
-    width: 400px;
-    padding: 0 24px;
-    border: darkgray 1px solid;
-    color:#fe793c;
-    line-height: 16px;
-    margin-bottom: 16px;
-    font-size: 16px;
+.field label{
+  margin-right: 5px;
+  /* margin-left: 5%; */
+  font-size: 24px;
+  color: #141b53;
+  font-weight:bold ;
 }
-
-
-  .login_form input{
-    display: block;
-    height: 41px;
-    width: 400px;
-    padding: 0 24px;
-    border: darkgray 1px solid;
-    color:#fe793c;
-    line-height: 16px;
-    margin-bottom: 16px;
-    font-size: 16px;
-  }
-  .after_login {
-    display:flex;
-    flex-direction: row;
-  }
-  .after_login input,label{
-  align-content: flex-start;
-  }
-  
-  .after_login a{
-    font-size: 16px;
-    color: gray;
-    margin-left: 60px;
-  
-  }
-  button{
-    padding: 12px 40px;
-    background-color: #fe793c;
-    border:none;
-    border-radius: 1px;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    color: white;
-    font-size: 16px;
-  }
-  
-  button:hover{
-    background-color: #fa5837;
-  }
-  .login_with{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .login_with button{
-    font-family: kitap-font-regular sans-serif;
-    padding: 12px 90px;
-    background-color: #FFF;
-    border: darkgray 1px solid;
-    border-radius: 2px;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-  }
-   */

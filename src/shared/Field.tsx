@@ -14,7 +14,7 @@ export default function Field({label, onChange, type, required}: Props): ReactEl
 
 
         useEffect(() => {
-        document.title = `Hello ${name}`;
+        document.title = `Food52 ${name}`;
         }, [name])
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export default function Field({label, onChange, type, required}: Props): ReactEl
         inputType = type;
     }
     return (
-        <div className="login_form">
+        <div className="field">
             <span>{label}</span>
             <input type={inputType} onChange={onChange} required={required}/>
         </div>

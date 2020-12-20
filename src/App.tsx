@@ -16,6 +16,9 @@ import Shop from './components/shop/shop';
 import { shopList } from './models/Shop';
 import Login from './components/auth/Login';
 import MenuList from './components/menu-list';
+import MenuListItem from './components/menu-list-item';
+import ErrorBoundary from './components/error-boundary/error-boundary'
+
 
 function App() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -55,6 +58,11 @@ function App() {
         <Route path="/menu">
           <MenuList/>
         </Route>
+        <ErrorBoundary>
+          <Route path="/blog">
+
+          </Route>
+        </ErrorBoundary>
     </Switch>
     <Footer/>
     </Router>

@@ -37,12 +37,13 @@ function Login({users}:Props) {
 
       <div className={style.after_login}>
         <input id="save" type="checkbox" value="Есте сақтау"/><label>Remember me</label>
+        <br></br>
         <a href="">Forget the password?</a>
       </div>
       <h6>Login with</h6>
       <div className={style.login_with}>
         <a href="https://mail.google.com/"><button className={style.google} >G</button></a>
-        <a href="https://www.facebook.com/?stype=lo&jlou=Afd3RDSVmFNzzLo542VVYoBBE5nA4ffYoZGgjooeEo4XYxkmiL61ujQF53kb0-sfI-i6N9FkQ3yYTsX_6EZu8-i1gn9_Ylq5R-9XZZTCZZkv4g&smuh=34169&lh=Ac9-Kasc43F6Wb-GFgo"><button className="facebook">f</button></a>
+        <a href="https://www.facebook.com/?stype=lo&jlou=Afd3RDSVmFNzzLo542VVYoBBE5nA4ffYoZGgjooeEo4XYxkmiL61ujQF53kb0-sfI-i6N9FkQ3yYTsX_6EZu8-i1gn9_Ylq5R-9XZZTCZZkv4g&smuh=34169&lh=Ac9-Kasc43F6Wb-GFgo"><button className={style.facebook}>f</button></a>
       </div>
       </div>
     </div>

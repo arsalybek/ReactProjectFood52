@@ -1,4 +1,4 @@
-import React, { ReactElement ,useState} from 'react'
+import React, { Fragment, ReactElement ,useCallback} from 'react'
 
 import {ShopModel} from '../../models/Shop'
 import style from './shop.module.css'
@@ -10,14 +10,20 @@ interface Props {
 }
 
 export default function Shop({shopList}: Props): ReactElement {
-    // const handleRemove = React.useCallback(
-    //     (id) => setUsers(shopList.filter((u) => u.id !== id)),
-    //     [users]
-    //   );
+    
+    let data = useCallback(() => shopList.map((product)=>{
+        console.log("use")
+        return <div>            
+            <ul className={style.catalog}>            
+				<li className={style.recipe_li} key={product.id}>
+					<img className={style.card__image} src={product.image} alt="test"/>
+                    </li>
+                    </ul>
+        </div>
+    }), [shopList])
+    
     return (
-        <>
-        
-        
+        <>            
         <div className="content">
         <span id="theme">OUR BESTSELLERS</span>
         <div id="main-header__menu" className="main-header__menu">
@@ -29,7 +35,6 @@ export default function Shop({shopList}: Props): ReactElement {
 				</form>
 			</div>            
 		</div>
-        {/* <hr></hr> */}
         </div>
         
          <div className={style.container2}>
@@ -47,10 +52,10 @@ export default function Shop({shopList}: Props): ReactElement {
                         <div className={style.clip_star}></div>
                         <div className={style.clip_star}></div>
                         <div className={style.clip_star}></div>
-                        </div>                      
-                        
+                        </div>                 
                         </div>
                         <button>add to cart</button>
+                        <Fragment>{data}</Fragment>
 					</div>
 				</li>
                 </ul>
