@@ -12,6 +12,8 @@ import ErrorBoundary from './components/error-boundary/error-boundary';
 
 
 const restoService = new RestoService()
+
+
 ReactDOM.render(
   <Provider store={store}>
     <RestoServiceContext.Provider value = {restoService}>

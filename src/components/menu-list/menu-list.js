@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component,lazy} from 'react';
 import MenuListItem from '../menu-list-item';
 import WithRestoService from '../hoc'
 import style from './menu-list.module.css';
@@ -23,9 +23,9 @@ class MenuList extends Component {
     render() {
         const {menuItems,loading,addedToCart,cartItems} = this.props
         
-        if(loading){
-            return <Spinner/>
-        }
+        // if(loading){
+        //     return <Spinner/>
+        // }
         
         return (
             <ul className={style.menu__list}>
