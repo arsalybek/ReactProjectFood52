@@ -1,7 +1,8 @@
 import React, { ReactElement, Component } from 'react';
 import { Link } from 'react-router-dom';
 import { RecipeCategoryModel } from '../../models/RecipeCategory';
-import './recipeCategory.css'
+import { LangContext } from '../context/Lang';
+import style from './recipeCategory.module.css'
 
 interface Props {
     foodCategoryList: RecipeCategoryModel[];
@@ -12,6 +13,9 @@ interface State {
 }
 
 export default class RecipeCategory extends Component<Props, State> {
+  // localStorageLang = localStorage.getItem('language')
+  // static contextType = LangContext
+  // propss = this.context.ContextProp 
     constructor(props: Props) {
         super(props);
         this.state={
@@ -57,27 +61,27 @@ export default class RecipeCategory extends Component<Props, State> {
     render() {
         return (
             <>
-        <div className="content">
-        <span id="theme">WHAT WE'RE COOKING NOW</span>
+        <div className={style.content}>
+        <span id={style.theme}>WHAT WE'RE COOKING NOW</span>
         <hr></hr>
         </div>
         
-        <div className="search-container">
-          <div className="searchbar">
-            <label htmlFor="search-input" className="search-icon-wrapper">
-              <div className="search-icon"></div>
+        <div className={style.search_container}>
+          <div className={style.searchbar}>
+            <label htmlFor="search-input" className={style.search_icon_wrapper}>
+              <div className={style.search_icon}></div>
             </label>
-              <input type="search" className="search-input"  placeholder="Search recipes and more..." 
+              <input type="search" className={style.search_input}  placeholder="Search recipes and more..." 
                       onChange={this.handleChange}/>
                 </div>
             </div>
 
-        <div className="food-category">
+        <div className={style.food_category}>
             {this.state.filtered.map((category) => {
                     return <div>
                         <Link to={`/${category.title}`}>
                         <img src = {category.image}/>
-                        <button className="btn">{category.title}</button>
+                        <button className={style.btn}>{category.title}</button>
                         </Link>
                         </div>
                 })}

@@ -1,0 +1,86 @@
+/* .login_form input{
+  height: 41px;
+  width: 400px;
+  padding: 0 24px;
+  border: darkgray 1px solid;
+  color:#fe793c;
+  line-height: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.after_login {
+  padding-top: 30px;
+  
+}
+.after_login input,label{
+align-content: flex-start;
+}
+
+.after_login a{
+  font-size: 16px;
+  color: gray;
+  margin-left: 60px;  
+}
+
+.fields{
+  margin-left: 5%;
+  margin-top: 5%;
+ 
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn1{
+  margin: 10px;
+  width: 90px;
+  background-color: #daba92;
+  color:  #ffffff;
+  opacity: .8;
+  font-size: 18px;
+  padding: 8px 14px;
+  border:  #887660;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn2{   
+  margin: 10px; 
+  width: 90px;
+  background-color: #887660;
+  color:  #ffffff;
+  opacity: .8;
+  font-size: 18px;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.field input{
+  height: 41px;
+  width: 400px;
+  padding: 0 24px;
+  border: darkgray 1px solid;
+  color:#fe793c;
+  line-height: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.field label{
+  margin-right: 5px;
+  /* margin-left: 5%;
+  font-size: 24px;
+  color: #141b53;
+  font-weight:bold ;
+}
+
+.submit{
+color: #887660;
+font-weight: bold;
+} */ 

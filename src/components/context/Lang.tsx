@@ -1,8 +1,8 @@
-import React, { useReducer, ReactNode, createContext, ReactElement} from 'react';
-
+import React, { createContext, ReactElement, ReactNode, useReducer } from 'react';
 import en from '../../strings/en.json';
-import ru from '../../strings/ru.json';
 import kz from '../../strings/kz.json';
+import ru from '../../strings/ru.json';
+
 
 enum LangActionType {
   SET_LANGUAGE = 'SET_LANGUAGE'
@@ -30,7 +30,7 @@ interface ContextProps {
 }
 
 const langReducer = (state: LangState, action: SetLanguageAction): LangState => {
-  switch(action.type) {
+  switch (action.type) {
     case LangActionType.SET_LANGUAGE:
       return {
         language: action.payload
@@ -62,19 +62,19 @@ function LangState({ children }: Props): ReactElement {
     const { language } = state;
     let langData: { [key: string]: string } = {};
 
-    if(language === 'EN') {
+    if (language === 'EN') {
       langData = en;
-    }else if(language === 'RU') {
+    } else if (language === 'RU') {
       langData = ru;
-    }else if(language === 'KZ') {
+    } else if (language === 'KZ') {
       langData = kz;
     }
 
     return langData[key];
   }
 
-  return(
-    <LangContext.Provider value={{ state, dispatch: { setLanguage, translate }}}>
+  return (
+    <LangContext.Provider value={{ state, dispatch: { setLanguage, translate } }}>
       {children}
     </LangContext.Provider>
   );

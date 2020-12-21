@@ -1,44 +1,33 @@
-.email-subscription {
+.email_subscription {
 position: absolute;
-height: 200px;
 width: 100%;
 top: 20%;
+height: 200px;
 text-align: center;
 }
-img{
-    margin:0;
-}
-h1 {
-color:#2D4558;
+.title {color:#2D4558;
 margin: 12px;
 font-size: 32px;
 }
 p {
 color:#4d6477;
-margin: 12px;
 font-size: 16px;
 font-weight: bold;
 }
-.search-input {
+.search_input {
 border-color: transparent;
-color: rgb(117, 117, 117);
 font-size: 16px;
-line-height: 44px;
+line-height: 25px;
 font-style: italic;
 text-align: initial;
+border-radius: 2px 0 2px 0;
 width: 300px;
 padding: 12px;
 }
-.search-input:focus {
+.search_input:focus {
 outline: transparent;
 }
-.search-input:focus::placeholder {
-color: transparent;
-}
-#subscribe-button-span{
-    background-color: transparent;
-}
-#subscribe-button-home  {
+.subscribe_btn_home  {
 border: none;
 border-radius: 2px;
 padding: 1rem 1rem;
@@ -49,6 +38,10 @@ text-align: center;
 color: white;
 background-color: #2D4558;
 }
-#subscribe-button-home:hover{
+.subscribe_btn_home:hover{
 background-color: #4d6477;
+}
+.back_img{
+    margin: auto;
+    display: block;
 }

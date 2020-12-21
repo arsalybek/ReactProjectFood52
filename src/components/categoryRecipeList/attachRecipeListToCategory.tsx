@@ -1,11 +1,13 @@
 import React, { Component, ComponentType } from "react";
-import {RecipeModel, recipeList} from "../../models/Recipe";
+import axios from "../../api/axios";
+import { RecipeModel } from "../../models/Recipe";
 
 interface Props {
+  fetchUrl?: string,
   categoryId?: number;
 }
 interface State {
-  curRecipeList: RecipeModel[]; 
+  curRecipeList: RecipeModel[];
 }
 
 const withDataFetching = (props: Props) => (
@@ -15,19 +17,23 @@ const withDataFetching = (props: Props) => (
     constructor() {
       super(props);
       this.state = {
-        curRecipeList: []
+        curRecipeList: [],
       };
     }
 
-    fetchList() {
-    recipeList.map((recipe) => {if (recipe.categoty_id == props.categoryId){
-        this.state.curRecipeList.push(recipe);
-        this.setState({curRecipeList:this.state.curRecipeList })
-      };})
+    async fetchData() {
+      const result = axios.get(props.fetchUrl!);
+      console.log(result);
+      (await result).data.map((recipe: RecipeModel) => {
+        if (recipe.categoty_id == props.categoryId) {
+          this.state.curRecipeList.push(recipe);
+          this.setState({ curRecipeList: this.state.curRecipeList })
+        };
+      })
     }
 
     async componentDidMount() {
-      this.fetchList();
+      this.fetchData();
     }
 
     render() {

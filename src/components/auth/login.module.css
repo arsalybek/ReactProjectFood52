@@ -1,0 +1,124 @@
+/* .app{
+    display: flex;
+  }
+  
+  
+  .login_page{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+  }
+  
+  .register .btn{
+      position: absolute;
+      right:70%;
+      bottom: 60%;
+      background-color: #887660;
+      color:  #ffffff;
+      opacity: .8;
+      font-size: 18px;
+      padding: 5px 14px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+  
+  .login .btn{
+    position: absolute;
+    right:70%;
+    bottom: 70%;
+    background-color: #887660;
+    color:  #ffffff;
+    opacity: .8;
+    font-size: 18px;
+    padding: 5px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .login-page .btn:hover {
+    opacity: none;
+    background-color:white;
+    color: #887660;
+    border: #FFF;
+  }
+  .left_side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 80px
+  }
+  
+  .img{
+    width: 860px;
+    height: 430px;
+  }
+  
+  
+  h2{
+    padding: 10px;
+    color: #97a5b2;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+  }
+  
+  h6{
+    color: #97a5b2;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase; 
+  }
+  
+  h5{
+    padding: 15px;
+    margin-top: 10px;
+    text-transform: uppercase; 
+    font-weight: 600;
+    color:#2D4558
+  }
+  
+  
+  .login_with{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .login_with button{
+   
+    padding: 12px 90px;
+    background-color: #FFF;
+    border: darkgray 1px solid;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  .login_with .google{
+    color: #fa5837;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .login_with .facebook{
+    color: #4267b2;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .register p a{
+    text-decoration: none;
+    color: #fe793c;
+  }
+  
+  a{
+    color:white
+  }
+  
+  a:hover{
+    color: rgb(87, 60, 60);
+  }
+  
+  .after_login{
+    margin-top: 30px;
+  } */

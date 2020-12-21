@@ -1,73 +1,74 @@
-import React, { ReactElement, useEffect, useState, useRef, createRef } from 'react'
+import React, { createRef, ReactElement, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { recipeList, RecipeModel } from '../../models/Recipe'
+import { RecipeModel } from '../../models/Recipe';
 import attachRecipeListToCategory from './attachRecipeListToCategory';
-import './recipes.css'
+import style from './recipes.module.css';
 
 interface Props {
-    curRecipeList: RecipeModel[]; 
+    curRecipeList: RecipeModel[];
 }
 
-function SaladRecipesList({curRecipeList}: Props): ReactElement {
+function SaladRecipesList({ curRecipeList }: Props): ReactElement {
     const [filteredList, setState] = useState(curRecipeList);
 
     const [curSearch, setSearchTxt] = useState('')
     const prevSearch = useRef('')
     const inputRef = createRef<HTMLInputElement>()
-    
+
     useEffect(() => {
         prevSearch.current = curSearch
-    }, [curSearch]) 
+    }, [curSearch])
 
-      function handleChange(e: any) {
-        
-        let currentList :RecipeModel[] | undefined =[];
-        let newList:RecipeModel[]=[];
-        if(e.target.value!==""){
-          currentList= curRecipeList
-          newList=currentList.filter(item => {
-            const lc=item.name;
-            const filter=e.target.value;
-            setSearchTxt(txt => filter)
-            return lc.includes(filter)
-          })
-          console.log(newList.length)
+    function handleChange(e: any) {
+
+        let currentList: RecipeModel[] | undefined = [];
+        let newList: RecipeModel[] = [];
+        if (e.target.value !== "") {
+            currentList = curRecipeList
+            newList = currentList.filter(item => {
+                const lc = item.name;
+                const filter = e.target.value;
+                setSearchTxt(txt => filter)
+                return lc.includes(filter)
+            })
+            console.log(newList.length)
         }
         else
-            newList=curRecipeList
-        
+            newList = curRecipeList
+
         setState(filteredList => newList)
         console.log("List" + filteredList.length)
-    } 
+    }
 
     return (
         <>
-        <div className="searchbar">
-        <label htmlFor="search-input" className="search-icon-wrapper">
-        <div className="search-icon"></div>
-        </label>
-        <input  type="search" className="search-input" id="search-input" placeholder="Search recipes and more..." 
-        ref ={inputRef} onChange={handleChange}/>
-        </div>
-        <span className="previous-search">{prevSearch.current}</span>
-        <div className="recipe-div">
-            {
-            filteredList?.map((recipe) => (
-                <Link key={recipe.id} to={'/details/' + recipe.id}>
-                <div className="recipe-li">
-                    <img className="recipe-img"src={recipe.image}/>
-                    <h1 className="recipe-name">{recipe.name}</h1>
-                    <span className="recipe-span">by {recipe.author}</span>
-                </div>
-                </Link>
-                ))
-            }
-        </div>
+            <div className={style.searchbar}>
+                <label htmlFor="search-input" className={style.search_icon_wrapper}>
+                    <div className={style.search_icon}></div>
+                </label>
+                <input type="search" className={style.search_input} placeholder="Search recipes and more..."
+                    ref={inputRef} onChange={handleChange} />
+            </div>
+            <span className={style.previous_search}>{prevSearch.current}</span>
+            <div className={style.recipe_div}>
+                {
+                    filteredList?.map((recipe) => (
+                        <Link key={recipe.id} to={'/details/' + recipe.id}>
+                            <div className={style.recipe_li}>
+                                <img className={style.recipe_img} src={recipe.image} />
+                                <h1 className={style.recipe_name}>{recipe.name}</h1>
+                                <span className={style.recipe_span}>by {recipe.author}</span>
+                            </div>
+                        </Link>
+                    ))
+                }
+            </div>
         </>
     )
 }
 
 export default attachRecipeListToCategory({
+    fetchUrl: "/recipeList",
     categoryId: 2,
-  })(SaladRecipesList);
-  
+})(SaladRecipesList);
+

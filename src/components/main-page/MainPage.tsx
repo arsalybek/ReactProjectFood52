@@ -1,6 +1,6 @@
-import React, { Component, createRef,  useContext } from 'react'
+import React, { Component } from 'react';
 import { LangContext } from '../context/Lang';
-import './main.css'
+import style from './main.module.css';
 
 interface Props {
 }
@@ -9,21 +9,21 @@ interface State {
 }
 
 export default class MainPage extends Component<Props, State> {
-    
+    static contextType = LangContext
     constructor(props: Props) {
         super(props);
         this.state = {
-            userEmail: ''
+            userEmail: '',
         };
 
-        this.handleEmailChange=this.handleEmailChange.bind(this);
-        this.handleSubmit=this.handleSubmit.bind(this);
-    } 
+        this.handleEmailChange = this.handleEmailChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
     emailInput = React.createRef<HTMLInputElement>();
 
     componentDidMount() {
-        if(this.emailInput.current){
+        if (this.emailInput.current) {
             this.emailInput.current.focus();
         }
     }
@@ -34,30 +34,32 @@ export default class MainPage extends Component<Props, State> {
         });
     }
 
-    handleSubmit(){
-        if(!this.state.userEmail.includes("@"))
+    handleSubmit() {
+        if (!this.state.userEmail.includes("@"))
             alert("Email address is not valid")
-        else 
+        else
             alert("Thank you for subscription")
-      }
+        this.setState({
+            userEmail: '',
+        });
+    }
 
     render() {
         return (
-        <>
-            <div className="email-subscription">
-                <h1>Want more Food52?</h1>
-                <p>Our best tips for eating thoughtfully and living joinfully, right to your inbox.</p>
-                    
-                <div >
-                    <input type="text" className="search-input" onChange={this.handleEmailChange} id="search-input" ref={this.emailInput} placeholder="Search recipes and more..." />
-                    <span id="subscribe-button-span"><button id="subscribe-button-home"onClick={this.handleSubmit}>Subscrible</button></span>
+            <>
+                <div className={style.email_subscription}>
+                    <h1 className={style.title} >Want more FOOD52?</h1>
+                    <p>Tips for eating thoughtfully and joinfully, right to your inbox.</p>
+
+                    <div >
+                        <input type="text" className={style.search_input} onChange={this.handleEmailChange} ref={this.emailInput} placeholder="Search recipes and more..." />
+                        <span><button className={style.subscribe_btn_home} onClick={this.handleSubmit}>Subscrible</button></span>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&copy;ixid=eyJhcHBfaWQiOjEyMDd9&copy;auto=format&copy;fit=crop&copy;w=500&copy;q=60"/>
-            </div>
-        
-        </>
+
+                <img className={style.back_img} src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-1.2.1&copy;ixid=eyJhcHBfaWQiOjEyMDd9&copy;auto=format&copy;fit=crop&copy;w=500&copy;q=60" />
+
+            </>
         )
     }
 }

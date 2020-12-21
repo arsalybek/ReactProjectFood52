@@ -3,7 +3,8 @@
     "blog":"BLOG",
     "food":"FOOD",
     "shop":"SHOP",
-    "title":"Want more Food52?",
-    "desc":"Our best tips for eating thoughtfully and living joinfully, right to your inbox.",
-    "login":"SUBSCRIBE"
+    "home-title":"Want more Food52?",
+    "home-desc":"Our best tips for eating thoughtfully and living joinfully, right to your inbox.",
+    "home-subs":"SUBSCRIBE",
+    "auth":"Log in/Sign up"
 }
