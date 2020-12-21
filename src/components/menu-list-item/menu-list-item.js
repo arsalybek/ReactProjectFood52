@@ -38,15 +38,3 @@ const MenuListItem = ({menuItem,onAddToCart,cartItems}) => {
 
 export default MenuListItem;
 
-
-// export class Checking extends Component{
-//     state = { };
-  
-//     render() {
-//       const { category } = this.props;
-//         if (menuItem.category === "pizza") {
-//             throw new Error("We don't cook this type of food");
-//     }
-  
-//     return <span>{category}</span>;
-// }

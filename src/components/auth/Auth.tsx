@@ -3,7 +3,8 @@ import { User } from "../../models/User"
 import { Link } from 'react-router-dom';
 import style from './auth.module.css'
 import { useForm } from "react-hook-form";
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Redux from './Redux'
 interface Props {
   login: (user: User) => void;
   cancel: () => void;
@@ -66,7 +67,9 @@ export default function Auth({ login, cancel }: Props): ReactElement {
       <Link to="/recipes" className={style.submit} type="submit"  onClick={() => login(user)}>Submit</Link>
       <button className={style.btn1} onClick={cancel}>Cancel</button>
       </div>
-      
+      <Route path="/redux">
+              <Redux />
+      </Route>
       
     </form>
     </div>

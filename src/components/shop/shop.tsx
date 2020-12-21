@@ -1,4 +1,4 @@
-import React, { Fragment, ReactElement ,useCallback} from 'react'
+import React, { Fragment, ReactElement ,useMemo} from 'react'
 
 import {ShopModel} from '../../models/Shop'
 import style from './shop.module.css'
@@ -11,12 +11,26 @@ interface Props {
 
 export default function Shop({shopList}: Props): ReactElement {
     
-    let data = useCallback(() => shopList.map((product)=>{
-        console.log("use")
-        return <div>            
+    let data = useMemo(() => shopList.map((product)=>{
+        console.log("use Memo")
+        return <div className={style.container_for}>            
             <ul className={style.catalog}>            
 				<li className={style.recipe_li} key={product.id}>
 					<img className={style.card__image} src={product.image} alt="test"/>
+                    <div className={style.card__description}>
+                        <h3 className={style.card__header}>{product.name}</h3>
+                        <div className={style.card__price}>{product.price} $</div>
+                        <div className={style.card__price}>Rewiew: {product.review_count}
+                        <div className={style.rating}>
+                        <div className={style.clip_star}></div>
+                        <div className={style.clip_star}></div>
+                        <div className={style.clip_star}></div>
+                        <div className={style.clip_star}></div>
+                        <div className={style.clip_star}></div>
+                        </div>                 
+                        </div>
+                        <button>add to cart</button>
+					</div>
                     </li>
                     </ul>
         </div>
@@ -38,7 +52,9 @@ export default function Shop({shopList}: Props): ReactElement {
         </div>
         
          <div className={style.container2}>
-            {shopList.map((product) => {
+         <div>{data}</div>
+         </div>
+            {/* {shopList.map((product) => {
                 return<ul className={style.catalog}>            
 				<li className={style.recipe_li} key={product.id}>
 					<img className={style.card__image} src={product.image} alt="test"/>
@@ -55,13 +71,12 @@ export default function Shop({shopList}: Props): ReactElement {
                         </div>                 
                         </div>
                         <button>add to cart</button>
-                        <Fragment>{data}</Fragment>
 					</div>
 				</li>
                 </ul>
             })
-            }
-            </div>           
+            } */}
+                       
      </>	    
     );
     }
