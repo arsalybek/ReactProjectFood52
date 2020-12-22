@@ -20,7 +20,7 @@ export default function Redux(): ReactElement {
         </button>
       )}
 
-      {/* {logged ? <div> Secret Infromation between you and me</div> : ""} */}
+      {logged ? <div> Secret Infromation between you and me</div> : ""}
     </div>
   );
 }

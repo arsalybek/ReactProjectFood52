@@ -15,10 +15,10 @@ import { users } from "./models/User";
 import Shop from './components/shop/shop';
 import { shopList } from './models/Shop';
 import Login from './components/auth/Login';
-import MenuList from './components/menu-list';
-import MenuListItem from './components/menu-list-item';
+import MenuList from './components/menu-list/menu-list';
 import ErrorBoundary from './components/error-boundary/error-boundary'
-
+import Redux from './components/auth/Redux';
+import MemoExample from './components/auth/MemoExample'
 
 function App() {
   const { dispatch: { translate }} = useContext(LangContext);
@@ -28,7 +28,7 @@ function App() {
        <Navbar  />
       {/* <LangSwitch/> */}
       <Switch>
-      <Route path="/home" exact>
+      <Route path="/" exact>
         <MainPage/>
         </Route>
         <Route path="/recipes">
@@ -58,11 +58,13 @@ function App() {
         <Route path="/menu">
           <MenuList/>
         </Route>
-        <ErrorBoundary>
-          <Route path="/blog">
+        <Route path="/auth">
+          <Redux/>
+        </Route>
 
-          </Route>
-        </ErrorBoundary>
+        <Route path="/memo" exact>              
+            <MemoExample />
+        </Route>
     </Switch>
     <Footer/>
     </Router>

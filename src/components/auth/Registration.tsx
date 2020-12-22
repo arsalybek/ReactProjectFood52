@@ -11,7 +11,7 @@ export default function Registration({
   registrate,
   cancel,
 }: Props): ReactElement {
-  let user: User = { email: "", id: 0, password: "", name: "" };
+  let user: User = { email: "", id: 0, password: "", name: "" ,isAuthed:false};
 
   return (
     <div className={style.fields}>

@@ -5,7 +5,6 @@
     width: 400px;
     padding: 0 24px;
     border: darkgray 1px solid;
-    color:#fe793c;
     line-height: 16px;
     margin-bottom: 16px;
     font-size: 16px;
@@ -25,8 +24,15 @@
   }
 
 .fields{
-    margin-left: 5%;
-    margin-top: 5%;
+    position: absolute;
+    left: 60%;
+    margin-left: -180px;
+    /* background-color: #ffffff; */
+    opacity: 0.9;
+    /* margin-left: 2%; */
+    margin-top:-44%;
+    padding: 13px;
+    border-radius: 08px;
    
 }
 
@@ -38,27 +44,31 @@
 }
 
 .btn1{
-    
-    margin: 10px;
-    width: 90px;
-    background-color: #daba92;
-    color:  #ffffff;
-    opacity: .8;
-    font-size: 18px;
-    padding: 8px 14px;
-    border:  #887660;
-    cursor: pointer;
-    border-radius: 5px;
-}
+  font-weight: bold;
+  margin: 10px;
+  width: 90px;
+  background-color: #ff8c00;
+  color:  #ffffff;
 
+  font-size: 18px;
+  padding: 8px 14px;
+  border:  #887660;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.error{
+  color:red;
+  font-weight: bolder;
+
+}
 
 .btn2{   
     margin: 10px; 
     width: 90px;
-    background-color: #887660;
+    background-color: #160c00;
     color:  #ffffff;
-    opacity: .8;
     font-size: 18px;
+    font-weight: bold;
     padding: 8px 14px;
     border: none;
     cursor: pointer;
@@ -67,26 +77,70 @@
 
 
 .field input{
-   
+  height: 41px;
+  width: 400px;
+  padding: 0 24px;
+  border: darkgray 1px solid;
+  line-height: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border-radius: 08px;
+    /* border-radius: 08px;
     height: 41px;
     width: 400px;
-    padding: 0 24px;
-    border: darkgray 1px solid;
-    color:#fe793c;
+    /* padding: 0 24px; */
+   /* border: darkgray 1px solid;
     line-height: 16px;
     margin-bottom: 16px;
-    font-size: 16px;
+    font-size: 16px; */
+}
+.field label{
+  margin-right: 5px;
+  /* margin-left: 5%; */
+  font-size: 22px;
+  background-color: #1C2B36;
+  font-weight:bold ;
+  /* height: 80px; */
+  width: 500px;
+  padding: 5px 24px;
+  color:#fff;
+  margin-bottom: 16px;
+  border-radius: 08px;
 }
 
-.field label{
-    margin-right: 5px;
-    /* margin-left: 5%; */
-    font-size: 24px;
-    color: #141b53;
-    font-weight:bold ;
-}
+
+  .search-input:focus {
+  outline: transparent;
+  }
+  .search-input:focus::placeholder {
+  color: transparent;
+  }
+  #subscribe-button-span{
+      background-color: transparent;
+  }
+  #subscribe-button-home  {
+  border: none;
+  border-radius: 2px;
+  padding: 1rem 1rem;
+  outline: none;
+  cursor: pointer;
+  min-width: 7rem;
+  text-align: center;
+  color: white;
+  background-color: #2D4558;
+  }
+  #subscribe-button-home:hover{
+  background-color: #4d6477;
+  }
+
 
 .submit{
   color: #887660;
   font-weight: bold;
+}
+
+.data_login{
+  position: absolute;
+  top:30px;
+  font-size: 50px;
 }

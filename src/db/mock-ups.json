@@ -1,0 +1,245 @@
+{
+    "recipeList" : [
+    {
+        "categoty_id":1, 
+        "id":11, 
+        "image":"https://images.food52.com/Dz3ekQUFkkAN7XBI_BggyQ0T41g=/660x440/filters:format(webp)/bdcd63f7-3015-4a44-8390-01b65eb84369--2019-0531_sausage-and-cabbage-pasta_3x2_rocky-luten_023.jpg", 
+        "name": "Chuck Roast Bolognese", 
+        "author": "ELLA QUITTNER", 
+        "review_count": 16 ,
+        "prep_time": "15 minutes",
+        "cook_time": "1 hour 20 minutes",
+        "serves": 2,
+        "date": "October  5, 2016",
+        "notes": "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S.,/n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":1, 
+        "id":12, 
+        "image": "https://images.food52.com/YV1cDJUUisEdjrqq6sJd77ji_EI=/530x354/a7cf92ae-a8e3-457a-91fe-019943132be5--2019-0723_martha-stewarts-one-pan-pasta_3x2_rocky-luten_040.jpg",
+        "name": "Martha Stewart's One-Pan Pasta", 
+        "author": "GENIUS RECIPES", 
+        "review_count": 175 ,
+        "prep_time": "10 minutes",
+        "cook_time": "20 minutes",
+        "serves": 2,
+        "date": "January  12, 2020",
+        "notes": "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S., /n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":1, 
+        "id":13, 
+        "image": "https://images.food52.com/k7n5ZF3U0LLtPyb0jvsQUdctPdg=/530x354/b0ea8eb2-0a3c-4d08-a1a0-80586633d75e--2018-0914_miso-mushroom-pasta_3x2_jenny-huang_32871.jpg",
+        "name": "Miso-Mushroom Pasta", 
+        "author": "YI JUN LOH", 
+        "review_count": 78 ,
+        "prep_time": "10 minutes",
+        "cook_time": "20 minutes",
+        "serves": 2,
+        "date": "July  5, 2018",
+        "notes":  "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S., /n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":1, 
+        "id":14, 
+        "image":"https://images.food52.com/YXloOEB5oueN29f_e_SRqOh-XrQ=/530x354/ac18fb43-556b-4e66-843d-b1ef0fefe065--2015-0407_pasta-piselli-pasta-w-peas-bobbi-lin_1262.jpg", 
+        "name": "Pasta Piselli", 
+        "author": " SDEBRANGO", 
+        "review_count": 10 ,
+        "prep_time": "15 minutes",
+        "cook_time": "1 hour 20 minutes",
+        "serves": 2,
+        "date": "January 30, 2013",
+        "notes": "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S.,/n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":1, 
+        "id":15, 
+        "image": "https://images.food52.com/gN5DKreJ4JYmX02DWyJdVQssGc8=/530x354/df96a37f-454e-4ae4-9b04-0728099cb6f6--Vegan_Eggplant_Pasta.jpg",
+        "name": "Spicy Eggplant Pasta", 
+        "author": "GENA HAMSHAW", 
+        "review_count": 32 ,
+        "prep_time": "30 minutes",
+        "cook_time": "20 minutes",
+        "serves": 6,
+        "date": "September 18, 2013",
+        "notes": "Certain vegetables go a little further than others in creating “meaty” texture in vegan recipes. Mushrooms, root vegetables, and legumes are all brilliant in this department. Eggplant is extra special, because it contributes meatiness without weighing a dish down the way an overload of beans or lentils sometimes can. It’s versatile, nutritious, and it absorbs flavors easily, so it’s a perfect choice for spicy, bold dishes."
+    },
+    {
+        "categoty_id":1, 
+        "id":16, 
+        "image": "https://images.food52.com/OxlahbIZLVowLybvqvTsAep1X98=/530x354/78eac002-8a6c-4323-b87d-6c0eb06f096c--2018-0914_orecchiette-guanciale-butternut-squash-kale_3x2_jenny-huang_32846.jpg",
+        "name": "Fall Weeknight Pasta", 
+        "author": "ERIC KIM", 
+        "review_count": 26 ,
+        "prep_time": "5 minutes",
+        "cook_time": "40 minutes",
+        "serves": 2,
+        "date": "September 21, 2018",
+        "notes":  "Let's not beat around the pumpkin patch: It's fall. I have this obnoxious orange-yellow-beige-brown-green knitted, striped sweater I bring out whenever the weather even tries to be brisk. Here's how it goes down:<br>Weather: I think I'm going to be brisk today. Me: Go ahead, Weather! I'm ready for your games (already wearing the sweater). I wear this sweater so often but don't really know how to wash it without shrinking it, so it's probably pretty dirty right now. Oh, look! I'm wearing it again.It's the kind of sweater you'd want to go to work in, the kind you'd want to go on a date in, the kind you'd wear to Hobby Lobby, to Bed Bath & Beyond, and even to bed. Sure, I sleep in it; it's so soft and good to me, why wouldn't I?"
+    },
+    {
+        "categoty_id":1, 
+        "id":17, 
+        "image":"https://images.food52.com/UETM1XbGGLT3usFYupnRaE2csog=/1320x880/filters:format(webp)/53b857d4-8321-4bf7-a8d7-cb45fcc2a7cc--2018-1207_tads-pasta_3x2_ty-mecham_001.jpeg", 
+        "name": "Daddy's Pasta", 
+        "author": "AMANDA HESSER", 
+        "review_count": 4 ,
+        "prep_time": "0 minutes",
+        "cook_time": "20 minutes",
+        "serves": 4,
+        "date": "December 10, 2018",
+        "notes": "Daddy’s pasta is a variation on pasta all’arrabbiata, a low-touch, slick sauce of tomato, red pepper flakes, and cheese. Tad started out shadowing the classic, but soon broke out on his own, adding chopped bacon and a bit more tomato. Rather than a long noodle, which was difficult for our kids to twirl and swallow, he used penne rigate, then orecchiette. His pasta shape du jour is now rotelle, because the tomatoes and bacon get trapped in its spokes. He tinkered and honed, making mental notes of our dinner table reviews and translating them into the next version: 1. Cook down the sauce longer so it really clings to the noodles. 2. Let the pasta sit for a few minutes before serving, which helps the whole shebang bond. —Amanda Hesser"
+    },
+    {
+        "categoty_id":1, 
+        "id":18, 
+        "image": "https://images.food52.com/On6Ra7lnmO66lk54M0fHEvdGnKc=/1320x880/filters:format(webp)/da54cfd6-7a62-4e48-89b7-c1533bbaf8de--2014-0225_CP_classic-chicken-piccata-005.jpg",
+        "name": "Classic Chicken Piccata", 
+        "author": "LINDA JOHNSON", 
+        "review_count": 88 ,
+        "prep_time": "15 minutes",
+        "cook_time": "30 minutes",
+        "serves": 6,
+        "date": "February  6, 2014",
+        "notes": "The flavor of this recipe was absolutely delicious, with a tart pucker from all the lemon and capers that's balanced by a last-minute addition of butter and the fresh brightness of parsley. The shallots get melty as they cook down, making for a sauce that's perfect on its own with the angel hair and even better when you add the chicken. —The Editors"
+    },
+    {
+        "categoty_id":1, 
+        "id":13, 
+        "image": "https://images.food52.com/k7n5ZF3U0LLtPyb0jvsQUdctPdg=/530x354/b0ea8eb2-0a3c-4d08-a1a0-80586633d75e--2018-0914_miso-mushroom-pasta_3x2_jenny-huang_32871.jpg",
+        "name": "Miso-Mushroom Pasta", 
+        "author": "YI JUN LOH", 
+        "review_count": 78 ,
+        "prep_time": "10 minutes",
+        "cook_time": "20 minutes",
+        "serves": 2,
+        "date": "July  5, 2018",
+        "notes":  "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S., /n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":2, 
+        "id":21, 
+        "image": "https://images.food52.com/DLOsBBQil8twM26f88AfMDF2HfA=/530x354/f26dca01-b2d1-473b-b8c0-4b797be69e5c--051810F_553.JPG",
+        "name": "Caesar Salad with Pancetta", 
+        "author": "MARIE VILJOEN", 
+        "review_count": 19 ,
+        "prep_time": "10 minutes",
+        "cook_time": "10 minutes",
+        "serves": 2,
+        "date": "October  5, 2016",
+        "notes":  "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S., /n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":2, 
+        "id":22, 
+        "image": "https://images.food52.com/1dNNLBOnpTT0RutIv6dzI7hQo_Y=/530x354/9cf3bbf7-ea28-48a8-bb53-17e6953e19d7--2014_1111_chicken-and-radicchio-salad-with-pickled-raisins-0316.jpg",
+        "name": "Chicken and Radicchio Salad", 
+        "author": " MICHELLE MCKENZIE", 
+        "review_count": 5 ,
+        "prep_time": "15 minutes",
+        "cook_time": "30 minutes",
+        "serves": 2,
+        "date": "October  5, 2016",
+        "notes": "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S., /n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":2, 
+        "id":23, 
+        "image": "https://images.food52.com/WdcsLrDw3k3EhYuiLiloXJVilAU=/530x354/33fef619-dd86-4ccd-87b0-5310cc4dc0f9--2019-0110_2-minute-foolproof-salad-dressing_3x2_ty-mecham.jpg",
+        "name": "Easy, Creamy Vegan Salad Dressing", 
+        "author": "ORI ZOHAR", 
+        "review_count": 4,
+        "prep_time": "10 minutes",
+        "cook_time": "10 minutes",
+        "serves": 2,
+        "date": "October  5, 2016",
+        "notes":  "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S., /n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":3, 
+        "id":31, 
+        "image": "https://images.food52.com/_727eoGqB0GGX-Wul5b0_ZneqRg=/530x354/0a892ce0-2f86-4be2-8645-f502db9a0030--2015-0331_chicken-marsala_mark-weinberg_0205.jpg",
+        "name": "Chicken Marsala", 
+        "author": "CHEFABILITIES", 
+        "review_count": 60,
+        "prep_time": "25 minutes",
+        "cook_time": "45 minutes",
+        "serves": 2,
+        "date": "October  5, 2016",
+        "notes": "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S., /n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":3, 
+        "id":32, 
+        "image": "https://images.food52.com/fkCrDEJCuOX0FySfqmxAdNpVZc8=/530x354/2b42b061-ea3d-4e9c-99d7-8a621f25d96a--2019-0813_instant-pot-french-garlic-chicken_3x2_ty-mecham_001.jpg",
+        "name": "Creamy Garlic Chicken", 
+        "author": "URVASHI PITRE", 
+        "review_count": 23,
+        "prep_time": "25 minutes",
+        "cook_time": "40 minutes",
+        "serves": 2,
+        "date": "October  5, 2016",
+        "notes":  "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S., /n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+    },
+    {
+        "categoty_id":3, 
+        "id":33, 
+        "image": "https://images.food52.com/19-9lUZB4FAfbn4hztGPA1MvkoQ=/530x354/a643542c-9c24-4841-b9d1-fb3155b1dfb3--2019-0115_burmese-inspired-chicken-braised-in-coconut-milk-turmeric-with-sweet-potato-final-3x2_ty-mecham_001.jpg",
+        "name": "Burmese-Inspired Chicken Braised", 
+        "author": "SARA JENKINS", 
+        "review_count": 104,
+        "prep_time": "40 minutes",
+        "cook_time": "40 minutes",
+        "serves": 4,
+        "date": "October  5, 2016",
+        "notes":  "My aunt’s family lived in Burma in the ‘60s and when they came back to the U.S., /n they brought a recipe for “kaukswe,” a coconut-chicken-curry dish from the southern part of the country./n It became our family’s celebratory dish for every big get-together. Gathered around a large round table in /n a corner of a rather overcrowded room, we filled our bowls from the communal pot and garnished Like my beloved sandwich, this soup finds its origins in the Italian-American classic, chicken Parmesan. Unlike the sandwich, the more refined soup easily translates into a wholesome weeknight meal. In some ways it even ups the ante–after all, it's made in a slow cooker, can be eaten with a spoon, and won't leave you with a lump in your stomach the way its other forms might. This is the chicken Parmesan that will love you back. —Julie Myers"
+        }],
+
+	"menu": [
+		{
+			"title": "WOW SALAD",
+			"price": 8,
+			"url": "https://res.cloudinary.com/glovoapp/w_700,h_360,c_fill,f_auto,q_auto/Stores/vr9aqwdyklont17nctef",
+			"category": "salads",
+			"id": 4
+		},
+		{
+			"title": "TERIYAKI BAKED SALMON",
+			"price": 25,
+			"url": "https://www.thewholesomedish.com/wp-content/uploads/2020/02/Teriyaki-Baked-Salmon-600X900.jpg",
+			"category": "meat",
+			"id": 5
+		},
+		{
+			"title": "SPAGHETTI",
+			"price": 8,
+			"url": "https://www.thewholesomedish.com/wp-content/uploads/2020/08/The-Best-Classic-Spaghetti-1200-768x768.jpg",
+			"category": "spaghetti",
+			"id": 6
+		},
+		{
+			"title": "CAESAR SALAD",
+			"price": 12,
+			"url": "https://static.1000.menu/img/content/21458/-salat-cezar-s-kr-salat-cezar-s-krevetkami-s-maionezom_1501173720_1_max.jpg",
+			"category": "salads",
+			"id": 1
+		},
+		{
+			"title": "COWBOY STEAK",
+			"price": 10,
+			"url": "https://i.cbc.ca/1.4491288.1516208229!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/cowboysteak.jpg",
+			"category": "meat",
+			"id": 2
+		},
+		{
+			"title": "PIZZA NAPOLETANA",
+			"price": 13,
+			"url": "https://www.pizzanapoletana.org/struttura/pagine_bicolor/mobile/decalogo_avpn_1.jpg",
+			"category": "pizza",
+			"id": 3
+		}
+		
+	]
+}
+

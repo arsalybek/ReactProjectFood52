@@ -1,5 +1,6 @@
 .menu__list {
     display: grid;
-    padding: 40px;
+    margin-left: 30px;
+    /* padding: 10px; */
     grid-template-columns: 430px 430px 430px;
 }

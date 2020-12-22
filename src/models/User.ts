@@ -3,7 +3,9 @@ export interface User {
     name: string;
     email: string;
     password: string;
+    isAuthed:boolean;
   }
+  
   
   
   export let users: User[] = [
@@ -12,18 +14,21 @@ export interface User {
       name: "Ayana",
       email: "aadilova@gmail.com",
       password: "12345a",
+      isAuthed:false
     },
     {
       id: 2,
       name: "Ayaylum",
       email: "ayaylum@gmail.com",
       password: "12345a",
+      isAuthed:false
     },
     {
       id: 3,
       name: "Nargiza",
       email: "nargiza@gmail.com",
       password: "12345a",
+      isAuthed:false
     }
   
   ];
