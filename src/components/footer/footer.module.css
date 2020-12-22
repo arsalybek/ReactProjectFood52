@@ -2,13 +2,13 @@
     box-sizing: border-box;
   } 
   
-  /* body{
-    display: grid;
+  body{
+    /* display: grid; */
     grid-template-rows: auto 1fr auto;
     font-size: 14px;
     align-items: start;
     min-height: 100vh;
-  } */
+  }
   
   .footer {
     display: flex;

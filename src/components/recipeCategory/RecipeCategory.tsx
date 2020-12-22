@@ -1,21 +1,17 @@
-import React, { ReactElement, Component } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { RecipeCategoryModel } from '../../models/RecipeCategory';
-import { LangContext } from '../context/Lang';
-import style from './recipeCategory.module.css'
+import style from './recipeCategory.module.css';
+import Cart from './Cart';
 
-interface Props {
-    foodCategoryList: RecipeCategoryModel[];
-}
 interface State {
     filtered: RecipeCategoryModel[];
     searchTxt: string
 }
-
+interface Props {
+  foodCategoryList: RecipeCategoryModel[];
+}
 export default class RecipeCategory extends Component<Props, State> {
-  // localStorageLang = localStorage.getItem('language')
-  // static contextType = LangContext
-  // propss = this.context.ContextProp 
     constructor(props: Props) {
         super(props);
         this.state={
@@ -24,7 +20,7 @@ export default class RecipeCategory extends Component<Props, State> {
         }
         this.handleChange=this.handleChange.bind(this);
       }
-    
+      
       componentDidMount() {
         this.setState({
           filtered: this.props.foodCategoryList
@@ -62,8 +58,8 @@ export default class RecipeCategory extends Component<Props, State> {
         return (
             <>
         <div className={style.content}>
-        <span id={style.theme}>WHAT WE'RE COOKING NOW</span>
-        <hr></hr>
+        <span className={style.theme}>WHAT WE'RE COOKING NOW</span>
+        <hr className={style.hr}></hr>
         </div>
         
         <div className={style.search_container}>

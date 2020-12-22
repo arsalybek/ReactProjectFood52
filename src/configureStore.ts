@@ -1,10 +1,21 @@
-import { Store, createStore } from "redux";
-import { State } from "./store/actionTypes";
+import { Store, createStore, applyMiddleware} from "redux";
+import { AppState,} from "./store/actionTypes";
 import { History } from "history";
-import { reducer } from "./store/reducer";
+import rootReducer from "./store/reducer";
+import { recipeList } from "./models/Recipe";
+import { recipeCategoryList } from "./models/RecipeCategory";
 
-export default function configureStore(history: History, initialState: State): Store<State> {
-  const store = createStore(reducer, initialState);
+// export default function configureStore(): Store<AppState> {
+  // const store = createStore(
+  //   rootReducer,
+  //   {
+  //     allRecipes: recipeList,
+  //     likedRecipes: [],
+  //     foodCategories: recipeCategoryList
+  //   },
+  // );
 
-  return store;
-}
+  // return store;
+// }
+
+

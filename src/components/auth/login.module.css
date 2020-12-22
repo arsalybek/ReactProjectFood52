@@ -1,41 +1,47 @@
-/* .app{
+.app{
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: space-evenly;
+  
+  }
+  .login_h1 {
+    color:#97a5b2;
+    padding: 10px;
+    font-size: 32px;
+    width: 210px;
+  }
+  
+   
+  .img{
+    margin:0;
+  }
+  
+  .h5{
+  color:#4d6477;
+  margin: 12px;
+  font-size: 16px;
+  font-weight: bold;
   }
   
   
+    
   .login_page{
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
   }
   
-  .register .btn{
-      position: absolute;
-      right:70%;
-      bottom: 60%;
-      background-color: #887660;
-      color:  #ffffff;
-      opacity: .8;
-      font-size: 18px;
-      padding: 5px 14px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-  }
   
-  .login .btn{
-    position: absolute;
-    right:70%;
-    bottom: 70%;
-    background-color: #887660;
-    color:  #ffffff;
-    opacity: .8;
-    font-size: 18px;
-    padding: 5px 14px;
+  
+  /* .login .btn:hover{
     border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: #c79051 ;
   }
+  .register .btn:hover{
+    border: none;
+    background-color: #c79051 ;
+  } */
   
   .login-page .btn:hover {
     opacity: none;
@@ -44,19 +50,23 @@
     border: #FFF;
   }
   .left_side{
+    width: auto;
+    background-color: #FFF;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 80px
+    margin-left: 30px;
+    /* margin: 0 80px */
   }
   
-  .img{
-    width: 860px;
+  /* .img{
+   
+    width: 660px;
     height: 430px;
-  }
+  }  */
   
   
-  h2{
+  .h2{
     padding: 10px;
     color: #97a5b2;
     font-size: 20px;
@@ -65,32 +75,22 @@
     
   }
   
-  h6{
+  .h6{
     color: #97a5b2;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase; 
   }
   
-  h5{
-    padding: 15px;
-    margin-top: 10px;
-    text-transform: uppercase; 
-    font-weight: 600;
-    color:#2D4558
-  }
-  
-  
   .login_with{
     display: flex;
     flex-direction: row;
-
+    /* justify-content: space-between; */
   }
   .login_with button{
-   
-    padding: 12px 90px;
-    background-color: #FFF;
-    border: darkgray 1px solid;
+    padding: 20px;
+    background-color:  #FFF;
+    border: rgb(169, 169, 169) 1px solid;
     border-radius: 2px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -99,26 +99,55 @@
     color: #fa5837;
     font-size: 20px;
     font-weight: bold;
+    border:none
+  }
+  .login_with .google:hover{
+    color: #fa5837;
+    font-size: 30px;
+    font-weight: bold;
+    border:none
   }
   .login_with .facebook{
     color: #4267b2;
     font-size: 20px;
     font-weight: bold;
+    border:none;
+  }
+  .login_with .facebook:hover{
+    color: #4267b2;
+    font-size: 30px;
+    font-weight: bold;
+    
+  }
+  .span{
+    background-color: #1C2B36;
+  
+    color: white;
+    
   }
   
-  .register p a{
-    text-decoration: none;
-    color: #fe793c;
-  }
-  
-  a{
-    color:white
-  }
-  
-  a:hover{
+  .a:hover{
     color: rgb(87, 60, 60);
   }
   
   .after_login{
-    margin-top: 30px;
-  } */
+    justify-self: start; 
+    justify-content: space-between;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .button_button_orange {
+    font: 0.9rem SFProText,sans-serif;
+    /* border: none; */
+    /* border-radius: 2px; */
+    padding: .50rem 1rem;
+    outline: none;
+    cursor: pointer;
+    min-width: 7rem;
+    text-align: center;
+    border: 1px solid #1C2B36;
+    background: #1C2B36;
+    color: #fff;
+    transition: all .3s linear;
+  }

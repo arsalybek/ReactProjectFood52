@@ -1,148 +1,156 @@
-.itemHeader{
-    color: #444444;
-    display: flex;
-    margin: 20px auto;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    font-weight: 300;
+.itemHeader {
+  color: #444444;
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  font-weight: 300;
 }
-.itemTitle{
-    margin: 10px auto -10;
+.itemTitle {
+  margin: 10px auto -10;
 }
-.aftHeader{
-    margin-left: 20px;
-    color:#909090;
-    font-weight: bolder;
-    margin-top: -5px;
-    font-size: 13px;    
+.aftHeader {
+  margin-left: 20px;
+  color: #909090;
+  font-weight: bolder;
+  margin-top: -5px;
+  font-size: 13px;
 }
-#img-id{
-    width: 600px;
-    border-radius: 5px;
-    margin-left: 50px;
-    margin-top: 50px;
+.img-id {
+  width: 600px;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 .split {
-    display: flex;
-    height: 100%;
-    top: 0;
-    padding-top: 20px;
-  }
-  
-  /* Control the left side */
-  #left {
-    left: 0;
-  }
-  
-  /* Control the right side */
-  #right {
-    right: 0;
-    margin-left: 50px;
-    margin-top: 50px;
-  }
-  .inner{
-    display:flex;
-    width: 100%;
-    padding: 0;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-  .innerText{
-      margin-left: 10px;
-      padding: 30px;
-        background-color: #F7F7F7;
-    
-  }
-  .servTitle{
-      padding: 7px;
-      font-weight: bolder;
-  }
-  .notesText{
-      margin-top: 20px;
-      width: 500px;
-      line-height: 1.5em;
-  }
+  display: flex;
+  height: 100%;
+  top: 0;
+  padding-top: 20px;
+}
 
-  .commetArea{
-    width: 650px;
-    height: 120px;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: rgb(250, 250, 250);
-    border: 1px solid rgb(234, 234, 234);
-    font-size: 15px;
-  }
+/* Control the left side */
+.left {
+  left: 0;
+}
 
-  #comment{
-    margin: 70px 300px;
-    justify-content: center;
-  }
+/* Control the right side */
+.right {
+  right: 0;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.inner {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.innerText {
+  margin-left: 10px;
+  padding: 30px;
+  background-color: #f7f7f7;
+}
+.servTitle {
+  padding: 7px;
+  font-weight: bolder;
+}
+.notesText {
+  margin-top: 20px;
+  width: 500px;
+  line-height: 1.5em;
+}
 
-  .commentReview{
-    margin: 20px;
-    color: #57696d;
-    font-size: 21px;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
+.commentArea {
+  margin-top: 30px;
+  width: 650px;
+  height: 120px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(234, 234, 234);
+  font-size: 15px;
+}
 
-  .btnReview{
-    background: #2d4558;
-    width: 200px;
-    border-radius: 1px;
-    outline: none;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 50px;
-    text-align: center;
-    color: #F7F7F7;
-    margin-top: 20px;
-  }
+.comment {
+  margin: 70px 300px;
+  justify-content: center;
+}
 
-  .email{
-    background-image: url(https://food52.com/assets/blog/bg-mailing-list-desktop-1d7584299446fb56b2690e62605fd5c168c1388e9a8a4872bac21928eae51d58.jpg);
-    background-size: cover;
-  }
+.commentReview {
+  margin: 20px;
+  color: #57696d;
+  font-size: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
-  .emailInner{
-    margin-top: 100px;
-    padding: 30px;
-    padding-left: 200px;
-    color: #2D4558;
-    line-height: 20px;
-  }
+.btnReview {
+  background: #2d4558;
+  width: 200px;
+  border-radius: 1px;
+  outline: none;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  color: #f7f7f7;
+  margin-top: 20px;
+}
 
-  .emailTextlast{
-    line-height: 25px;
-    font-size: 13px;
-    font-weight: lighter;
-    margin-left: 5px;
-  }
+.email {
+  background-image: url(https://food52.com/assets/blog/bg-mailing-list-desktop-1d7584299446fb56b2690e62605fd5c168c1388e9a8a4872bac21928eae51d58.jpg);
+  background-size: cover;
+}
 
-  .mailInput{
-    background: #fff;
-    height: 42px;
-    border-color: #eaeaea;
-    padding: 0 10px;
-    font-weight: 400;
-    font-size: 13px;
-    width: 230px;
-  }
+.emailInner {
+  margin-top: 100px;
+  padding: 30px;
+  padding-left: 200px;
+  color: #2d4558;
+  line-height: 20px;
+}
 
-  .btn-email{
-    background: #2d4558;
-    width: 98px;
-    margin: 0;
-    border: none;
-    border-radius: 0 1px 1px 0;
-    padding: 0;
-    font-weight: 700;
-    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 42px;
-    text-align: center;
-    cursor: pointer;
-  }
+.emailTextlast {
+  line-height: 25px;
+  font-size: 13px;
+  font-weight: lighter;
+  margin-left: 5px;
+}
+
+.mailInput {
+  background: #fff;
+  height: 42px;
+  border-color: #eaeaea;
+  padding: 0 10px;
+  font-weight: 400;
+  font-size: 13px;
+  width: 230px;
+}
+
+.btn-email {
+  background: #2d4558;
+  width: 98px;
+  margin: 0;
+  border: none;
+  border-radius: 0 1px 1px 0;
+  padding: 0;
+  font-weight: 700;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.comment-item {
+  margin-top: 10px;
+}
+
+.formsText{
+  margin-top: 30px;
+  border: none;
+}

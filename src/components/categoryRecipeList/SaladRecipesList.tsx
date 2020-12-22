@@ -8,7 +8,7 @@ interface Props {
     curRecipeList: RecipeModel[];
 }
 
-function SaladRecipesList({ curRecipeList }: Props): ReactElement {
+function SaladRecipesList({ curRecipeList}: Props): ReactElement {
     const [filteredList, setState] = useState(curRecipeList);
 
     const [curSearch, setSearchTxt] = useState('')
@@ -57,7 +57,9 @@ function SaladRecipesList({ curRecipeList }: Props): ReactElement {
                             <div className={style.recipe_li}>
                                 <img className={style.recipe_img} src={recipe.image} />
                                 <h1 className={style.recipe_name}>{recipe.name}</h1>
+                                <div>
                                 <span className={style.recipe_span}>by {recipe.author}</span>
+                                </div>
                             </div>
                         </Link>
                     ))
@@ -70,5 +72,5 @@ function SaladRecipesList({ curRecipeList }: Props): ReactElement {
 export default attachRecipeListToCategory({
     fetchUrl: "/recipeList",
     categoryId: 2,
-})(SaladRecipesList);
+})(SaladRecipesList)
 

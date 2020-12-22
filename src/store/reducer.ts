@@ -1,12 +1,19 @@
-/** @format */
-
 import { Reducer } from "redux";
+import { RecipeModel } from "../models/Recipe";
 import { RecipeCategoryModel } from "../models/RecipeCategory";
-import { State, GET_FOODCATEGORYLIST } from "./actionTypes";
+import { GET_FOODCATEGORYLIST, AppAction, AppState } from "./actionTypes";
+import { ADD_PRODUCT, REMOVE_PRODUCT } from "./constants";
 
-const initialState: State = {
-  foodCategories: [],
-};
+// const initialState: State = {
+//   foodCategories: [],
+// };
+
+// const initState: InitState = {
+//   allRecipes: [],
+//   likedRecipes: [],
+//   foodCategories: []
+// };
+
 
 const categoryList: RecipeCategoryModel[] = [
   {
@@ -29,14 +36,59 @@ const categoryList: RecipeCategoryModel[] = [
   },
 ];
 
-export const reducer: Reducer<State> = (state = initialState, action) => {
-  switch (action.type) {
-    case GET_FOODCATEGORYLIST: {
-      return { foodCategories: categoryList };
+// export const reducer: Reducer<State> = (state = initialState, action) => {
+//   switch (action.type) {
+//     case GET_FOODCATEGORYLIST: {
+//       return { foodCategories: categoryList };
+//     }
+
+//     default: {
+//       return state;
+//     }
+//   }
+// };
+
+export default function rootReducer(state: AppState, action: AppAction): AppState {
+  const { likedRecipes } = state;
+  const { payload, type } = action;
+
+  switch (type) {
+    case ADD_PRODUCT: {
+      const newLikedRecipes = [...likedRecipes];
+
+      let line = newLikedRecipes.find(line => line.product === payload);
+      if (!line) {
+        line = {
+          product: payload
+        };
+        newLikedRecipes.push(line);
+      }
+
+      return {
+        ...state,
+        likedRecipes: newLikedRecipes,
+      };
+    }
+    case REMOVE_PRODUCT: {
+      let newLikedRecipes = [...likedRecipes];
+
+      let line = newLikedRecipes.find(line => line.product === payload);
+      if (line) {
+        newLikedRecipes = newLikedRecipes.filter((line) => line.product !== payload);
+      }
+      return {
+        ...state,
+        likedRecipes: newLikedRecipes,
+      };
     }
 
-    default: {
+    // case GET_FOODCATEGORYLIST: {
+    //   return {
+    //     ...state,
+    //      foodCategories: categoryList };
+    // }
+
+    default:
       return state;
-    }
   }
-};
+}
