@@ -22,8 +22,7 @@ function Login({users}:Props) {
     const [showedElement, setShowedElement] = useState(<></>);
     const [isAuthed, setIsAuthed] = useState(false);
     
-
-          
+         
     
     return (
     <>          
@@ -32,15 +31,15 @@ function Login({users}:Props) {
               <div className={style.left_side}>
                 <div className={style.login}>
                     <h1 className={style.login_h1}>Log In to Food52</h1>
-                    <h5>Already have an account?<span id="subscribe-button-span">
-                      <button id="subscribe-button-home"onClick={() => 
+                    <h5>Already have an account?<span className={style.subscribe_button_span}>
+                      <button className={style.button_button_orange}onClick={() => 
                         showComponent(AuthorizationPages.Auth)}>Login
                       </button></span> 
                 </h5>
                 </div>                
                 <div className={style.register}>
-                    <h5>Not a member yet?<span id="subscribe-button-span">
-                      <button id="subscribe-button-home" 
+                    <h5>Not a member yet?<span className={style.subscribe_button_span}>
+                      <button className={style.button_button_orange}
                     onClick={() => showComponent(AuthorizationPages.Registration)}
                     >Sign Up</button></span></h5>                                             
                 </div>         

@@ -24,24 +24,8 @@ font-size: 16px;
 font-weight: bold;
 }
 
-#subscribe-button-span{
-      background-color: transparent;
-}
-#subscribe-button-home  {
+
   
-  border: none;
-  border-radius: 8px;
-  padding: 1rem 1rem;
-  outline: none;
-  cursor: pointer;
-  min-width: 7rem;
-  text-align: center;
-  color: white;
-  background-color: #2D4558;
-}
-  #subscribe-button-home:hover{
-  background-color: #4d6477;
-  }
 .login_page{
   display: flex;
   flex-direction: row;
@@ -139,7 +123,12 @@ h6{
   font-weight: bold;
   
 }
+span{
+  background-color: #1C2B36;
 
+  color: white;
+  
+}
 
 a:hover{
   color: rgb(87, 60, 60);
@@ -154,8 +143,8 @@ a:hover{
 
 .button_button_orange {
   font: 0.9rem SFProText,sans-serif;
-  border: none;
-  border-radius: 2px;
+  /* border: none; */
+  /* border-radius: 2px; */
   padding: .50rem 1rem;
   outline: none;
   cursor: pointer;
