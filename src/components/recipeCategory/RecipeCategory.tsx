@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { RecipeCategoryModel } from '../../models/RecipeCategory';
 import style from './recipeCategory.module.css';
-import Cart from './Cart';
 
 interface State {
     filtered: RecipeCategoryModel[];

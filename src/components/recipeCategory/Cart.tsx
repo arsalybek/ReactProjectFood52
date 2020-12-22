@@ -15,7 +15,7 @@ class Cart extends React.Component<Props, {}> {
   render() {
     return (
       <div>
-        <div>Всего товаров в корзине {this.props.list.length}</div>
+        <span className={style.cnt_items}>Items in Favourites: {this.props.list.length}</span>
         <ul>
           {this.props.list.map((line, index) => {
             return (

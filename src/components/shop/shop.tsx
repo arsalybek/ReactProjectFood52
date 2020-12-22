@@ -6,7 +6,6 @@ import { AddProduct, AppState, RecipeCartLine, RemoveProduct } from '../../store
 import { connect} from 'react-redux';
 import {Dispatch} from 'redux'
 import { RecipeModel } from '../../models/Recipe';
-import Cart from '../recipeCategory/Cart';
 
 interface Props {
    shopList: ShopModel[];
@@ -58,18 +57,10 @@ export function Shop(props: Props): ReactElement {
     return (
         <>            
         <div className="content">
-        <span id="theme">OUR BESTSELLERS</span>
-        <div id="main-header__menu" className="main-header__menu">
-			<div className={style.search}>
-				<form className={style.search__form}>
-					<label className={style.search__label}>
-						<input className={style.search__input} type="search" placeholder="Search"/>
-					</label>
-				</form>
-			</div>            
+        <span className={style.shop_title}>OUR BESTSELLERS</span>
+        <div id="main-header__menu" className="main-header__menu">           
 		</div>
         </div>
-        
          <div className={style.container2}>
          {/* <div>{data}</div> */}
          </div>
@@ -91,7 +82,7 @@ export function Shop(props: Props): ReactElement {
                             </div>                 
                             </div>
                         </div>
-                        <span>{!isInCart(product) ? <button className={style.fav_btn} onClick={() => props.addProduct(product)}>Add to favorites</button> : <button onClick={() => props.removeProduct(product)}>Remove from favorites</button>}</span>
+                        <span>{!isInCart(product) ? <button className={style.fav_btn} onClick={() => props.addProduct(product)}>Add to favorites</button> : <button className={style.fav_btn} onClick={() => props.removeProduct(product)}>Remove from favorites</button>}</span>
                         </li>
                         </ul>
             </div>

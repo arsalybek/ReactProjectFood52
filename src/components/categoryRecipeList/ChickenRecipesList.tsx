@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect, useState, useRef, createRef } from 'react'
 import { Link } from 'react-router-dom';
-import { recipeList, RecipeModel } from '../../models/Recipe'
+import {RecipeModel } from '../../models/Recipe'
 import attachRecipeListToCategory from './attachRecipeListToCategory';
 import style from './recipes.module.css'
 

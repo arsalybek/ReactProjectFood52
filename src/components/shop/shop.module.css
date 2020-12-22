@@ -9,10 +9,39 @@
     max-width: 100%;
     height: auto;
   } */
-  
+  .cnt_items{
+    font-size: 20px;
+    color: #2D4558;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    margin: 50px;
+  }
+  .shop_title{
+    font-size: 20px;
+    color: #2D4558;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    margin: 50px;
+}
   .a {
     text-decoration: none;
     color: inherit;
+  }
+  .fav_btn {
+    border: 1px solid #1C2B36;
+    background: #1C2B36;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    padding: .35rem 1rem;
+    outline: none;
+    cursor: pointer;
+    min-width: 7rem;
+    text-align: center;
+  }
+  .fav_btn:hover{
+    background-color: #2D4558;
   }
   
   /* ul {

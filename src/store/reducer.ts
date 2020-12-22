@@ -4,17 +4,6 @@ import { RecipeCategoryModel } from "../models/RecipeCategory";
 import { GET_FOODCATEGORYLIST, AppAction, AppState } from "./actionTypes";
 import { ADD_PRODUCT, REMOVE_PRODUCT } from "./constants";
 
-// const initialState: State = {
-//   foodCategories: [],
-// };
-
-// const initState: InitState = {
-//   allRecipes: [],
-//   likedRecipes: [],
-//   foodCategories: []
-// };
-
-
 const categoryList: RecipeCategoryModel[] = [
   {
     id: 1,
@@ -35,18 +24,6 @@ const categoryList: RecipeCategoryModel[] = [
       "https://images.food52.com/WGlZTMMoa4czpcFsw6OXQvYP5jQ=/322x215/729016a7-afcd-49cb-a499-be9f31d6d3c0--Chicken-Cacciatore_0735_food52_mark_weinberg.jpg",
   },
 ];
-
-// export const reducer: Reducer<State> = (state = initialState, action) => {
-//   switch (action.type) {
-//     case GET_FOODCATEGORYLIST: {
-//       return { foodCategories: categoryList };
-//     }
-
-//     default: {
-//       return state;
-//     }
-//   }
-// };
 
 export default function rootReducer(state: AppState, action: AppAction): AppState {
   const { likedRecipes } = state;
@@ -81,13 +58,6 @@ export default function rootReducer(state: AppState, action: AppAction): AppStat
         likedRecipes: newLikedRecipes,
       };
     }
-
-    // case GET_FOODCATEGORYLIST: {
-    //   return {
-    //     ...state,
-    //      foodCategories: categoryList };
-    // }
-
     default:
       return state;
   }

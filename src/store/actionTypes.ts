@@ -5,14 +5,6 @@ import { ADD_PRODUCT, REMOVE_PRODUCT } from "./constants";
 
 export const GET_FOODCATEGORYLIST = "GET_FOODCATEGORYLIST";
 
-// export type getCategoryAction = {
-// 	type: string,
-//     payload: RecipeCategoryModel[];
-// }
-
-// export type State = {
-// 	foodCategories: RecipeCategoryModel[];
-// }
 export interface RecipeCartLine {
 	product: ShopModel;
   }
